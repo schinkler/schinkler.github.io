@@ -86,7 +86,6 @@ ul li {
 
 ul li a {
 	display: block;
-	background: #;
 	text-decoration: none;
 	text-align: center;
 	text-transform: uppercase;
@@ -314,7 +313,7 @@ ul li a:hover {
     /* Hide the original label */
     .city > span { display: none; }
 }	
-}	
+
 
 
 
