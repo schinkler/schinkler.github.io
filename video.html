@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roger Schinkler Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+	
+	<style>
+		
+.header {
+	background-image: url(images/backgroundVideo.jpg);
+	background-size: cover;
+  	background-color: #CCC;
+  	padding: 110px 15px 130px 15px;
+  	text-align: center;
+}
+	
+	</style>	
+	
+	
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="images/RogerLogoWhite.png" width="125" height="39" alt=""></a><br><br>
+<span class="intro">Video / Movie 
+</span>
+</div>
+
+<div id="navbar">
+	
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="index.html#portfolio">portfolio</a></li>
+				<li><a href="resume.html">resume</a></li>
+				<li><a href="video.html">video</a></li>
+			</ul>	
+	
+</div>
+
+<div class="content">
+
+	
+		<p>
+		<span class="headline">Portfolio video</span>
+	</p>
+	
+
+	
+	<p>	
+		<span class="subhead">Challenge: <br></span> 
+		<span class="body">Everything you see were all my concepts and ideas for print graphics. From thought to execution, did however have help with copy since that is not my forte. Then it came time to take it a step further, create a video with motion... never worked in After Effects. But I manage after many tutorials to take my motionless graphics and make it move. I alway put my heart and soul into my work.</span>
+
+	</p>
+
+
+	
+	
+
+	
+	
+	<div class="container">
+
+
+			<div class="first">
+				
+				
+				
+					<div class="video_container">
+					  <video controls="controls" allowfullscreen="true" poster="images/videobutton.jpg">
+						<source src="movies/RogerPortfolio.mp4" type="video/mp4">
+					  </video> 
+					</div>				
+
+
+				
+				
+				
+				
+
+				
+				
+				
+			</div>	
+
+	</div>
+
+</div>
+
+	
+	
+	
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roger Schinkler Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+	
+	<style>
+		
+.header {
+	background-image: url(images/backgroundBrand.jpg);
+	background-size: cover;
+  	background-color: #CCC;
+  	padding: 110px 15px 130px 15px;
+  	text-align: center;
+}
+	
+	</style>	
+	
+	
+<body>
+
+<div class="header">
+  <a href="index.html"><img src="images/RogerLogoWhite.png" width="125" height="39" alt=""></a><br><br>
+  <span class="intro">Portfolio / Brand Advertising</span>
+</div>
+
+<div id="navbar">
+	
+			<ul>
+				<li><a href="index.html">home</a></li>
+				<li><a href="index.html#portfolio">portfolio</a></li>
+				<li><a href="resume.html">resume</a></li>
+				<li><a href="video.html">video</a></li>
+			</ul>	
+	
+</div>
+
+<div class="content">
+	
+	<p>
+		<span class="headline">Brand Advertising</span>
+	</p>
+	
+
+	
+	<p>		
+		<span class="subhead">Client: <br></span> 
+		<span class="body">Airport Revenue News / Airport Experience News</span>
+	</p>
+	<p>
+		<span class="subhead">Challenge: <br></span> 
+		<span class="body">The advertiser is always right. Using the brand to push sales.</span>
+	</p>
+
+
+	
+	
+	
+	
+	
+  
+	
+	
+		
+	
+        <div class="container">
+						
+            <div class="second"><img src="images/FB2016singlepage.jpg" alt="" class="pimage"></div>
+            <div class="third"><img src="images/FB2014.jpg" alt="" class="pimage"></div>
+			
+			<div class="first"><img src="images/FB2016spread.jpg" alt="" class="pimage"></div>
+
+        </div>	
+	
+	
+
+
+	
+	
+	  
+	  
+</div>
+
+	
+	
+	
+	
+	
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
