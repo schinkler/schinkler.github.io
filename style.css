@@ -86,6 +86,27 @@ ul li a:hover {
 }
 
 
+.pdffooter {
+	background: #555;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	height: 14px;
+	line-height: 14px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	color: #CCC;
+	border-radius: 3px;
+	padding: 6px 10px 6px 10px;
+}
+
+.pdffooter:hover{
+	background: #BBB;
+	color: #333;
+}
+
+
 
 
 /* END NAVIGATION */
@@ -160,6 +181,24 @@ ul li a:hover {
 .bodydark a{ 
 	text-decoration: none;
 	color: #444;
+}
+
+
+.bodydarkfooter{ 
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 0.8em; 
+	text-transform: uppercase;
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400;
+	line-height: 1.4em; 
+	letter-spacing: 0.07em;
+	color: #CCC;
+}
+
+.bodydarkfooter a{ 
+	text-decoration: none;
+	color: #CCC;
 }
 
 .subhead { 
@@ -270,10 +309,21 @@ ul li a:hover {
 
 .fifth {
     grid-column: 1/ 8;
-	background: #EFEFEF;
+	background: #EEE;
 	padding: 30px;
 }
 
+.sixth {
+    grid-column: 1 / 7;
+	background: #EEE;
+	padding: 30px;
+}
+
+.seventh {
+    grid-column: 7 / -1;
+	background: #EEE;
+	padding: 30px;
+}
 
 
 
@@ -347,6 +397,14 @@ ul li a:hover {
 /*END VIDEO*/
 
 
+/*FOOTER*/
+
+.footer {
+	width: 100%;
+	background-color: #666;
+	padding: 40px 100px;
+}
+
 
 
 
@@ -388,10 +446,6 @@ ul li a:hover {
 		line-height: 2.0em; 
 }
 	
-
-	
-	
-	
 	.hidden-xs {
 		display: none;
 }
@@ -405,6 +459,10 @@ ul li a:hover {
   		padding: 25px 50px;
 }	
 
+	.footer {
+		padding: 20px 50px;
+}
+	
 	.circular--landscape {
   		width: 120px;
   		height: 120px;
@@ -437,14 +495,21 @@ ul li a:hover {
 
 	.fifth {
    		grid-column: 1/ -1;
-		background: #EEE;
+		padding: 15px;
+}
+	
+	.sixth {
+		grid-column: 1 / -1;
 		padding: 15px;
 }
 
+	.seventh {
+		grid-column: 1 / -1;
+		padding: 15px;
+}
+	
+
 	}
-
-
-
 
 /*MOBILE*/
 @media (max-width:400px){
@@ -481,12 +546,14 @@ ul li a:hover {
 		line-height: 1.25em; 
 }
 	
-	
-	
 	.content {
   		padding: 10px 20px;
 }
 
+	.footer {
+		padding: 20px 20px;
+}
+	
 	.logo {
 		width: 150px;
 		height: 67px;
