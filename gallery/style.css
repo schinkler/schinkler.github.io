@@ -197,12 +197,12 @@ table.tableproduct {
   }
 table.tableproduct td { 
   vertical-align: top;
-  padding: 5px 10px 5px 0px;
+  padding: 10px 15px 10px 0px;
   border-bottom: 1px solid #D8D8D8;
   }
 table.tableproduct th { 
   vertical-align: top;
-  padding: 5px 0px 5px 0px;
+  padding: 10px 0px 10px 0px;
   border-bottom: 1px solid #D8D8D8;
   }
 table.tableproduct tr:last-child > td  {
@@ -309,7 +309,7 @@ table.tableproduct tr:first-child > td {
 
 .bodyproductbold { 
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	font-size: 1em; 
+	font-size: 1.1em; 
 	text-transform: none;
 	font-style: normal; 
 	font-variant: normal; 	
@@ -321,12 +321,12 @@ table.tableproduct tr:first-child > td {
 }
 .bodyproduct { 
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	font-size: 1em; 
+	font-size: 1.1em; 
 	text-transform: none;
 	font-style: normal; 
 	font-variant: normal; 	
 	font-weight: 100; 
-	line-height: 20px; 
+	line-height: 22px; 
 	letter-spacing: 0.08em;
 	color: #222;
 }
