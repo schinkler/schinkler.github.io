@@ -175,6 +175,14 @@ ul li a:hover {
 	z-index: 1;
 }
 
+.item4 {
+    grid-column: 4 / 12;
+	grid-row: 1;
+	align-self: center;
+	padding: 0em 0em 0em 0em;
+	z-index: 1;
+}
+
 .fade{
       border: 0px solid black;
       opacity: 0.15;
@@ -206,15 +214,15 @@ table.tableproduct tr:first-child > td {
 }	
 
 .circlebuy {
-	width: 38px;
-	height: 38px;
+	width: 42px;
+	height: 42px;
 	border-radius: 50%;
   	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	letter-spacing: 0.08em;
 	font-weight: 600; 
 	color: #fff;
-	line-height: 39px;
+	line-height: 42px;
 	text-align: center;
 	margin: 20px 0px 20px 0px;
 	background: #888888;
