@@ -102,13 +102,14 @@ ul li a:hover {
    	grid-template-columns: auto auto auto auto;
 	grid-template-rows: auto auto;
 	grid-gap: 50px;
-	padding: 0px 0px px 0px;
+	padding: 0px 0px 100px 0px;
     justify-content: left;
     align-content: center;
 }
 
 
 .artcontainersmall {
+	grid-column: 1fr;
 	position: relative;
 	width: 100%;
 	padding-bottom: 0px;
@@ -463,7 +464,7 @@ form .submit:hover {
    	grid-template-columns: auto auto auto;
 	grid-template-rows: auto auto auto;
 	grid-gap: 30px;
-	padding: 20px 0px 75px 0px;
+	padding: 0px 0px 75px 0px;
 }
 
 .artcontainertext {
@@ -576,7 +577,7 @@ form .submit:hover {
    	grid-template-columns: auto auto;
 	grid-template-rows: auto auto;
 	grid-gap: 25px;
-	padding: 10px 0px 50px 0px;
+	padding: 0px 0px 50px 0px;
 }
 
 .artcontainertext {
