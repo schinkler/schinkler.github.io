@@ -102,7 +102,7 @@ ul li a:hover {
    	grid-template-columns: auto auto auto auto;
 	grid-template-rows: auto auto;
 	grid-gap: 50px;
-	padding: 0px 0px 50px 0px;
+	padding: 0px 0px px 0px;
     justify-content: left;
     align-content: center;
 }
@@ -111,6 +111,7 @@ ul li a:hover {
 .artcontainersmall {
 	position: relative;
 	width: 100%;
+	padding-bottom: 0px;
 }
 
 .artcontainertext {
@@ -130,6 +131,7 @@ ul li a:hover {
 	display: block;
 	width: 100%;
 	height: auto;
+
 }
 
 .artimagebig {
@@ -359,7 +361,6 @@ form .submit:hover {
 	font-weight: 100; 
 	line-height: 1.3em; 
 	color: #999;
-	text-align: left;
 }
 
 .intro { 
@@ -382,7 +383,7 @@ form .submit:hover {
 	font-style: normal; 
 	font-variant: normal; 	
 	font-weight: 100; 
-	line-height: 1.3em; 
+	line-height: 1.1em; 
 	letter-spacing: 0.03em;
 	color: #2D2D2D;
 	text-align: left;
@@ -452,7 +453,6 @@ form .submit:hover {
 	font-size: 1.2em; 
 	line-height: 1.3em; 
 	color: #1C1C1C;
-	text-align: left;
 }	
 	
 .content {
@@ -487,7 +487,7 @@ form .submit:hover {
 	
 	
 .item1 {
-    grid-column: 5 / 12;
+    grid-column: 6 / 12;
 	grid-row: 1 / -1;
 }	
 .item2 {
@@ -545,7 +545,7 @@ form .submit:hover {
 /*item1 HOME PAGE*/
 
 .item1 {
-    grid-column: 2 / 12;
+    grid-column: 4 / 12;
 	grid-row: 1 / -1;
 }	
 	
