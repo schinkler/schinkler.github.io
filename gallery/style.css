@@ -287,7 +287,7 @@ circle a:hover {
 	transition:0.9s;
 }
 .product-image-thumbnail:hover {
-	opacity:0.7;
+	opacity:0.5;
 }
 .product-image-thumbnail-spacer {
 	position:relative; 

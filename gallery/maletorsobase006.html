@@ -118,6 +118,10 @@
 		   var lastImg = 1;
 document.getElementById(lastImg).className = "thumb selected";
 function preview(img) {
+
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+
 document.getElementById(lastImg).className = "thumb";
 img.className = "thumb selected";
 document.getElementById(0).src = img.src;
