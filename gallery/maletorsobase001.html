@@ -8,6 +8,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="style.css">
+	
+	
+	
 </head>
 	
 
@@ -44,7 +47,9 @@
 	   
 	   
 		<div class="item2">
-			<img class="artimagebig" src="sculptures/MaleTorsoBase_001.jpg" alt="Male Torso with Base #001">
+			
+			<div id="product-image"><img class="artimagebig" src="sculptures/MaleTorsoBase_001.jpg" id="0" alt="Male Torso with base #001"></div>
+			
 		</div>
 
 	   
@@ -78,7 +83,50 @@
 			</table>
 		   
 		   
-                    <circle><a href="contact.html">buy</a></circle>		
+                  <div style="padding: 30px 0px 30px 0px"><circle><a href="contact.html">buy</a></circle></div>
+		   
+		   
+	
+		   
+		   
+		                
+	   
+		   
+		   
+					<div id="product-image-wrap">
+
+
+					<!-- Thumbs -->
+					<div class="product-image-thumbnail"><img src="sculptures/MaleTorsoBase_001.jpg" id="1" class="thumb" onclick="preview(this)" alt="image 0"></div>
+					<div class="product-image-thumbnail-spacer"></div>
+					<div class="product-image-thumbnail"><img src="sculptures/MaleTorsoBase_001a.jpg" id="2" class="thumb" onclick="preview(this)" alt="image 2"></div>
+					<div class="product-image-thumbnail-spacer"></div>
+					<div class="product-image-thumbnail"><img src="sculptures/MaleTorsoBase_001b.jpg" id="3" class="thumb" onclick="preview(this)" alt="image 3"></div>
+					<div class="product-image-thumbnail-spacer"></div>
+
+
+					</div>
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		<script type="text/javascript"> 
+		   
+		   var lastImg = 1;
+document.getElementById(lastImg).className = "thumb selected";
+function preview(img) {
+document.getElementById(lastImg).className = "thumb";
+img.className = "thumb selected";
+document.getElementById(0).src = img.src;
+lastImg = img.id;
+}
+		   </script>  
+		   
+
+		   
 		   
 		   
 			</div>
