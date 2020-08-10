@@ -122,7 +122,11 @@ document.getElementById(lastImg).className = "thumb";
 img.className = "thumb selected";
 document.getElementById(0).src = img.src;
 lastImg = img.id;
+	
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
 }
+
 		   </script>  
 		   
 
