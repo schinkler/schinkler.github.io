@@ -362,14 +362,6 @@ ol {
 	padding: 0px 75px 0px 75px;
 }
 
-.header {
-    border: 0px dashed #999;
-	background-color: #222;
-	grid-column: 1 / -1;
-	grid-row: 1;
-	align-self: center;
-	padding: 20px 75px 20px 75px;
-}
 
 .footer {
     border: 0px dashed #999;
@@ -526,6 +518,10 @@ ol {
 	padding: 0px 50px 0px 50px;
 }
 
+.navbar {
+	padding: 0px 50px 0px 50px;
+}
+
 .footer {
 	padding: 30px 50px 20px 50px;
 }
@@ -589,6 +585,10 @@ ol {
 
 .moreinfo {
 	grid-row: 4;
+	padding: 0px 30px 0px 30px;
+}
+
+.navbar {
 	padding: 0px 30px 0px 30px;
 }
 	
