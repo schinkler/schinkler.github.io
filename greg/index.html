@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Physician Services</title>
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="style.css">
+</head>
+	
+	
+<body>
+
+	<div id="top"></div>
+	
+	<div class="sticky" id="top">
+		<div class="navbar">
+			<div><a href="#top"><img class="logo" src="images/pslogowhite.png" width="175" height="auto" alt="Physician Services"></a></div>
+				<div>
+					<ul class="nav">
+						<li class="nav"><a href="#service">Services</a></li>
+						<li class="nav"><a href="#programs">Programs</a></li>
+						<li class="nav"><a href="about.html">About</a></li>
+						<li class="nav"><a href="contact.html">Contact</a></li>
+					</ul>	
+			</div>
+		</div>
+	</div>
+
+	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top-140
+      }, 800, function(){
+      });
+    } // End if
+  });
+});
+</script>
+
+	
+	
+	
+	
+	
+	
+	
+<div class="parent">
+	
+   <div class="container">
+	    <div class="item1"><img src="images/Doctor.jpg" alt="" class="pimage"></div>
+	   
+	  	<div class="item2"><span class="headline">Need help with your insurance billing?</span></div>
+		<div class="item3"><span class="intro">We are the solution to all your Chiropractic insurance billing needs.</span></div>
+		   
+	</div>	
+</div>	
+
+<div class="parent" id="service">
+
+	<div class="container">
+		
+	    <div class="mouse"><img src="images/mouse.jpg" alt="" class="pimage"></div>
+	  	<div class="item4"><span class="subheadline">We provide a full range of billing services for all Chiropractic and multidisciplinary practices</span></div>			
+		<div class="item5">
+				
+					<ul>
+						<li class="bullets">Electronic and paper claim submissions
+					<ul> 
+						<li class="bulletsarrrow">Commercial</li>
+						<li class="bulletsarrrow">Government</li>
+						<li class="bulletsarrrow">Personal Injury</li>
+						<li class="bulletsarrrow">Workers Compensation</li>
+						<li class="bulletsarrrow">Secondary Insurance</li>
+					</ul>
+						</li>
+						<li class="bullets">Accounts Receivable Management
+					<ul>
+						<li class="bulletsarrrow">Extensive Insurance Follow-up</li>
+					</ul>
+						</li>
+						<li class="bullets">Posting of Insurance Payments
+					<ul>
+						<li class="bulletsarrrow">Thorough review of incorrectly paid claims</li>
+					</ul>
+						</li>
+						<li class="bullets">Denial Review and Management</li>
+						<li class="bullets">Appeals of Denials and Low Paid Claims</li>
+						<li class="bullets">Fee and Code Evaluation</li>
+						<li class="bullets">Weekly Phone Conferences</li>
+					</ul>				
+
+
+		</div>
+		
+	</div>	
+
+</div>
+
+	
+<div class="parent" id="programs">
+
+	<div class="container">
+		
+	    <div class="ipad"><img src="images/ipad.jpg" alt="" class="pimage"></div>
+	  	<div class="item4"><span class="subheadline">How our three programs work…</span></div>			
+		<div class="item5">
+
+			<p class="body">We offer three remote access programs and a full chiropractors’ needs.</p>
+
+			<p class="body">Utilizing your office management software, we will process the insurance billing, post insurance payments and adjustments, and enter all our notes from conversations with insurance companies. With remote access you are in total control.</p>
+
+			<p class="body">We provide chiropractors with a personal medical billing specialist who addresses the specific needs of our client in regards to insurance filing, collections and follow-up.</p>
+
+			<button onclick="myFunction()" type="button" class="button">MORE INFO +</button>
+			
+		</div>
+	
+		
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("moreinfo");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+	$(document).ready(function(){
+    $("button").click(function(){
+    $(this).text($(this).text() == 'CLOSE INFO -' ? 'MORE INFO +' : 'CLOSE INFO -');
+  });
+});
+</script>
+
+			<div class="moreinfo" id="moreinfo" style="display: none">
+
+				<p class="infoheadline">Solution</p>			
+
+				<p class="bodybold">With all of our programs, you will have complete access to all of your:</p>
+				<ol>
+					<li class="bullets">Data</li>
+					<li class="bullets">Reports</li>
+					<li class="bullets">Charges</li>
+					<li class="bullets">Payments</li>
+					<li class="bullets">Status Notes</li>
+					<li class="bullets">Insurance Aging Reports</li>
+				</ol>
+
+				<p class="infoheadline">Program Information</p>			
+
+				<p class="bodybold">For all programs:</p>
+
+				<ol>
+					<li class="bullets">There is a monthly minimum invoice of $600</li>
+					<li class="bullets">A computer in your office will need to be dedicated for our use, possibly two depending on volume</li>
+					<li class="bullets">NO contracts! </li>
+					<li class="bullets">Physician Services uses an agreement form, not a contract. </li>
+					<li class="bullets">We offer a 30 day written termination notice for either party</li>
+					<li class="bullets">There is a set-up fee of $300.00/$600.00 – depending on the software</li>
+					<li class="bullets">PIP and med pay clams are on a percentage basis</li>
+				</ol>
+
+				<p class="infoheadline">Additional Services</p>			
+
+				<p span class="bodybold">Pre-authorization Requests</p>
+				<ol>
+					<li class="bullets">$20.00 per request</li>
+				</ol>
+
+				<p span class="bodybold">Consulting/Admin services</p>
+				<ol>
+					<li class="bullets">$35 hour</li>
+				</ol>
+
+				<p span class="bodybold">Credentialing</p>
+				<ol>
+					<li class="bullets">Medicare credentialing is $650.00</li>
+					<li class="bullets">Medicare revalidation $300.00</li>
+					<li class="bullets">All other insurance companies $450.00</li>
+					<li class="bullets">Above pricing is per provider/application per insurance</li>
+				</ol>
+
+				<p span class="bodybold">Eligibility and Benefit Verification</p>
+				<ol>
+					<li class="bullets">$20.00/$40.00 per verification, depending on insurance</li>
+					<li class="bullets">24-hour turnaround time</li>
+					<li class="bullets">Customized VOB form</li>
+				</ol>
+
+				<p span class="bodybold">Old Accounts Receivable Recovery</p>
+				<ol>
+					<li class="bullets">$3.95 per claim or percentage of collected whichever is higher</li>
+				</ol>
+
+				<p span class="bodybold">Patient Statements</p>
+				<ol>
+					<li class="bullets">$2.00 per statement</li>
+					<li class="bullets">Statements will be mailed once a month</li>
+					<li class="bullets">Patients will pay you directly</li>
+					<li class="bullets">We will never contact your patient regarding a bill</li>
+					<li class="bullets">We will send out three statements; after the third statement, we suggest utilizing a collection service</li>
+				</ol>
+
+				<p span class="bodybold">Posting of old EOBs</p>
+				<ol>
+					<li class="bullets">$2.00 per claim</li>
+				</ol>
+
+				<p span class="bodybold">Posting of Patient Charges/Payments</p>
+				<ol>
+					<li class="bullets">$1.00 per entry</li>
+				</ol>
+
+				<p span class="bodybold">Reviewing Doctor Notes</p>
+				<ol>
+					<li class="bullets">Admin time ($35.00 per hour) on a per claim rate agreement.</li>
+				</ol>
+		</div>	
+	</div>
+	
+	
+	
+	<div class="moreinfo">
+		
+		<div class="programcontainer">
+			
+			<div class="programs"><span class="bodybold">Program A</span>
+					<p><a href="images/PS_Agreement_ProgramA.pdf" class="button" target="_blank">DOWNLOAD PDF</a></p>
+					<p class="bodybold">$4.50 per claim</p>
+					<ul>
+						<li class="bullets2">is submitted once per week to maximize your savings</li>
+						<li class="bullets2">EOBs are posted several times per week</li>
+						<li class="bullets2">PIP and Med pay claims are on a percentage basis</li>
+					</ul>	
+			</div>
+			
+			<div class="programs"><a class="bodybold">Program B</a>
+					<p><a href="images/PS_Agreement_ProgramB.pdf" class="button" target="_blank">DOWNLOAD PDF</a></p>
+					<p class="bodybold">$5.25 per claim</p>
+					<p class="body">This is our total insurance billing program where we will enter your charges provided to us from your daysheets. This program can replace an entire insurance department.</p>
+					<ul>
+						<li class="bullets2">Daysheets should be submitted to us daily</li>
+						<li class="bullets2">Billing is submitted weekly to maximize your savings</li>
+						<li class="bullets2">EOBs are posted several times per week</li>
+						<li class="bullets2">PIP and Med pay claims are on a percentage basis</li>
+					</ul>	
+			</div>
+			
+			<div class="programs"><a class="bodybold">Program C</a>
+					<p><a href="images/PS_Agreement_ProgramC.pdf" class="button" target="_blank">DOWNLOAD PDF</a></p>
+					<p class="bodybold">Percentage of Insurance Collections</p>
+					<p class="body">Our percentages range from 5% to 10% depending on your insurance collections.</p>
+					<p class="body">After reviewing your last 6 months of insurance collections totals, we will discuss which program best fits your needs and your percentage.</p>
+					<ul>
+						<li class="bullets2">Billing is submitted several times per week</li>
+						<li class="bullets2">EOBs are posted several times per week</li>
+						<li class="bullets2">Invoices are calculated based on insurance collections plus $3.95 per no-pay claim</li>
+					</ul>	
+			</div>
+
+	</div>
+	
+	</div>	
+
+	
+	
+	
+	
+	
+</div>
+
+	
+
+	
+	
+	
+	
+<div class="parent">
+	<div class="container">
+	    <div class="mugs"><img src="images/mugs.jpg" alt="" class="pimage"></div>
+	  	<div class="item4"><span class="subheadline">We Provide Personalized Service</span></div>			
+		<div class="item5">
+			<p class="body">After 20 years we have learned that weekly or bi monthly phone meetings with our clients keeps them informed on their accounts and collections.   One of the many keys to our success is to stay in touch with our clients so they feel in control and that we are on top of their money. We value our clients input to better our service. We service doctors from coast to coast.
+			</p>
+		</div>
+	</div>	
+</div>
+	
+
+	<div class="footer"><a href="index.html"><img class="logo" src="images/pslogowhite.png" width="240" height="auto" alt="Physician Services"></a>
+		
+		<p class="bodyfooterbold">Greg Barnes<br>
+		<span class="bodyfooter">Physician Services</span></p>
+		<p class="bodyfooter">800.208.1009
+		<br>954.495.6845
+		<br><a href="mailto:info@psmbs.com" style="text-decoration: none; color: #999">info@psmbs.com</a></p>
+	</div>
+	
+	
+	
+	
+</body>
+</html>
