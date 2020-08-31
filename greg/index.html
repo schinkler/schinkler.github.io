@@ -14,27 +14,33 @@
 	
 <body>
 
-	<div id="top"></div>
 	
-	<div class="sticky">
-		<div class="navbar">
-			<div><a href="#top"><img class="logo" src="images/pslogowhite.png" width="175" height="auto" alt="Physician Services"></a></div>
-				<div>
-					<ul class="nav">
-						<li class="nav"><a href="#service">Services</a></li>
-						<li class="nav"><a href="#programs">Programs</a></li>
-						<li class="nav"><a href="#personalized">Personalized</a></li>
-						<li class="nav"><a href="about.html">About</a></li>
-						<li class="nav"><a href="contact.html">Contact</a></li>
-					</ul>	
-			</div>
-		</div>
-	</div>
+		
+		
+		
+<header class="header">
+  <a href="index.html"><img class="logo" src="images/pslogoblack.png" width="175" height="auto" alt="Physician Services"></a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+						<li><a href="index.html#service">Services</a></li>
+						<li><a href="index.html#programs">Programs</a></li>
+						<li><a href="index.html#personalized">Personalized</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+  </ul>
+</header>		
+		
+		
+	<div id="top" style="position: relative; height: 70px;"></div>
 
 	
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+
+
+	
 $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
@@ -56,6 +62,20 @@ $(document).ready(function(){
     } // End if
   });
 });
+	
+jQuery ( document ).ready ( function($) {
+var hash= window.location.hash
+if ( hash == '' || hash == '#' || hash == undefined ) return false;
+      var target = $(hash);
+      headerHeight = 120;
+      target = target.length ? target : $('[name=' + hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').stop().animate({
+          scrollTop: target.offset().top - 120 //offsets for fixed header
+        }, 'linear');
+      }
+} );
+	
 </script>
 
 	
@@ -63,7 +83,7 @@ $(document).ready(function(){
 	
 	
 	
-	
+
 	
 <div class="parent">
 	
@@ -285,9 +305,6 @@ function myFunction() {
 	
 	</div>	
 
-	
-	
-	
 	
 	
 </div>
