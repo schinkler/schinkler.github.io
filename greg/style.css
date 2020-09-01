@@ -11,72 +11,167 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	background: #fff;
+	
 }
 
 
-
-
+a{
+	color: #000;
+}
 
 
 
 /* NAVIGATION */
 
+
+
 .sticky {
 	position: -webkit-sticky;
 	position: sticky;
+	background: #FFFFFF;
 	top: 0;
+	height: 82px;
+	box-shadow:1px 1px 4px 0 rgba(0,0,0,.1);
 	padding: 0px;
 	z-index: 3;
 }
 
 
-.navbar {
-	border: 0px dashed #999;
-    display: grid;
-    grid-template-columns: 25% 75%;
-    grid-template-rows: auto;	
-  	overflow: hidden;
-	border-width: 0px 0px 0px 0px; /* top right bottom left */
-	border-style: solid;
-	height: 80px;
-  	background: #222;
-	align-items: center;
-	padding: 0px 120px 0px 120px;
-	z-index: 2;
+.header{
+	background-color: #fff;
+	box-shadow:1px 1px 4px 0 rgba(0,0,0,.1);
+	position: 100%;
+	z-index: 4;
 }
 
-
-ul.nav {
+.header ul{
+	margin:0;
+	padding:0;
 	text-align: right;
-	margin: 0px 0px 0px 0px;
+	list-style: none;
+	overflow: hidden;
+	background-color: #fff;
 }
 
-ul li.nav {
-	display: inline-block;
-}
-
-ul li a {
-	background: #222;
-	text-decoration: none;
-	text-align: right;
+.header ul a{
+	display: block;
+	outline:0px solid #1752A1;
 	text-transform: uppercase;
-	height: 16px;
-	line-height: 16px;
-	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	font-size: 12px;
-	letter-spacing: 0.08em;
 	color: #898989;
-	border-radius: 3px;
-	margin: 0px 0px 0px 10px;
-	padding: 6px 10px 6px 10px;
+	letter-spacing: 0.08em;
+	padding: 20px 40px 20px 0px;
+	border-right: 1px solid #ECECEC;
+	text-decoration: none;
 }
 
-ul li a:hover {
-	background: #383838;
-	color: #D7D7D7;
+.header ul a:hover{
+	background-color: #F8F8F8;
+}
+
+.header .logo{
+	float: left;
+	display: block;
+	padding: 8px 60px;
+}
+
+.header .menu{
+	clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
+}
+
+.header .menu-icon{
+	border: 0px solid #F30004;
+	padding: 42px 40px;
+	position: relative;
+	float: right;
+	cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+	background: #333;
+	display: block;
+	height: 2px;
+	width: 18px;
+	position: relative;
+	transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+	background: #333;
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	top: 5px;
+}
+
+.header .menu-icon .nav-icon:after{
+	background: #333;
+	content: "";
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	top: -5px;
+}
+
+.header .menu-btn{
+	display: none;
+}
+
+.header .menu-btn:checked ~ .menu{
+	max-height: 300px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+	background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+	transform: rotate(-45deg);
+	top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+	transform: rotate(45deg);
+	top: 0;
+}
+
+@media (min-width: 1000px){
+	
+	.header{
+	background-color: #fff;
+	box-shadow:1px 1px 4px 0 rgba(0,0,0,.1);
+	position: 100%;
+	z-index: 4;
 }
 
 	
+	.header li{
+		float:left;
+	}
+	
+	.header li a{
+		padding: 34px 24px;
+	}
+	
+	.header .menu{
+		clear:none;
+		float: right;
+		max-height: none;
+	}
+	
+	.header .menu-icon{
+		display: none;
+	}
+}
 
 
 
@@ -93,7 +188,7 @@ ul li a:hover {
 
 
 .headline { 
-    font-family: "Playfair Display", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+    font-family: "Playfair Display";
 	font-size: 58px; 
 	text-transform: none;
 	font-style: normal; 
@@ -281,6 +376,7 @@ ol {
 
 
 .parent {
+	display: inline-block;
  	border: 0px dashed #999;
  	margin-bottom: 150px;
 	height: 100%;
@@ -301,6 +397,8 @@ ol {
 .item1 {
     grid-column: 4 / -1;
 	grid-row: 1 / 12;
+	z-index: -2;
+
 }
 
 .item2 {
@@ -429,6 +527,13 @@ ol {
 /*TABLET*/
 @media (max-width:830px){
 	
+	
+	
+.header .logo{
+	padding: 10px 25px;
+}
+
+	
 .headline { 
 	font-size: 46px; 
 	line-height: 48px; 
@@ -543,8 +648,10 @@ ol {
 /*MOBILE*/
 @media (max-width:412px){
 	
+.header .logo{
+	padding: 10px 15px;
+}
 
-	
 .parent {
  	margin-bottom: 50px;
 }
@@ -669,9 +776,6 @@ ol {
 	line-height: 20px; 
 }
 	
-.logo {
-	width: 150px;
-}
 
 ol {
     margin-top: -15px;
