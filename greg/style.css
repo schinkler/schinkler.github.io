@@ -196,6 +196,10 @@ a{
 
 
 
+
+
+
+
 /* MORE INFO & BUTTON */
 
 .info-btn{
@@ -205,7 +209,7 @@ a{
 
 .info-icon{
 	letter-spacing: 1.5px;
-	font-size: 14px; 
+	font-size: 13px; 
 	color: #333;
 	border-radius: 3px;
 
@@ -357,6 +361,32 @@ a{
 	color: #111;
 }
 
+/*TABLET*/
+@media (max-width:830px){
+	
+.headline { 
+	font-size: 46px; 
+	line-height: 48px; 
+}
+
+.subheadline { 
+	font-size: 34px; 
+	line-height: 40px; 
+}
+
+.intro { 
+	font-size: 26px; 
+	line-height: 28px; 
+}
+}
+
+
+
+
+
+
+
+
 .body { 
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	font-size: 18px; 
@@ -368,17 +398,34 @@ a{
 	color: #111;
 }
 
+.bodybold { 
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 18px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400;
+	line-height: 26px; 
+	letter-spacing: 0.5px;
+	color: #333;
+}
+
 @media (max-width:412px){
 	.body { 
 	font-size: 16px; 
-	line-height: 23px; 
+	line-height: 22px; 
 	}
 	
 	.bodybold { 
-	font-size: 17px; 
-	line-height: 23px; 
+	font-size: 16px; 
+	line-height: 22px; 
 	}
 }
+
+
+
+
+
+
 
 
 .bodyfooter { 
@@ -405,19 +452,11 @@ a{
 	color: #999; 
 }
 
-.bodybold { 
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	font-size: 18px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 400;
-	line-height: 26px; 
-	letter-spacing: 0.5px;
-	color: #333;
-}
 
 
-.bulletsarrrow {
+/* BULLETS */
+
+.bulletsarrow {
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	list-style-type: none;
 	font-size: 18px; 
@@ -430,7 +469,7 @@ a{
 	color: #111;
 }
 
-.bulletsarrrow:before {
+.bulletsarrow:before {
 	color: #000;
 	content: "\00BB \0020";
 }
@@ -466,6 +505,31 @@ a{
 ol {
     margin-top: -20px;
 }
+
+
+@media (max-width:412px){
+	
+.bulletsarrow {
+	font-size: 16px; 
+	line-height: 22px; 
+}
+	
+.bullets {
+	font-size: 16px; 
+	line-height: 18px; 
+}
+
+.bullets2 {
+	font-size: 16px; 
+	line-height: 18px; 
+
+}
+
+ol {
+    margin-top: -15px;
+	}
+}
+
 
 
 .button {
@@ -654,7 +718,7 @@ ol {
 
 @media (max-width:412px){
 	.programcontainer {
-		margin: 40px 0px 50px 0px;
+		margin: 0px 0px 50px 0px;
 		grid-gap: 30px;
 	}
 
@@ -685,37 +749,6 @@ ol {
 /*TABLET*/
 @media (max-width:830px){
 	
-
-	
-.headline { 
-	font-size: 46px; 
-	line-height: 48px; 
-}
-
-.subheadline { 
-	font-size: 34px; 
-	line-height: 40px; 
-}
-
-.intro { 
-	font-size: 26px; 
-	line-height: 28px; 
-}
-	
-.bulletsarrrow {
-	font-size: 17px; 
-	line-height: 22px; 
-}
-
-.bullets {
-	font-size: 17px; 
-	line-height: 22px; 
-}
-
-.button {
-	font-size: 12px; 
-	margin: 20px 0px 20px 0px;
-}
 
 .sticky + .content {
   	padding-top: 85px;
@@ -782,9 +815,6 @@ ol {
 	padding: 30px 50px 20px 50px;
 }
 
-.button {
-	margin: 30px 0px 0px 0px;
-}
 }
 
 
@@ -871,30 +901,6 @@ ol {
 	margin: 32px 0px 0px 0px;
 }
 
-.body { 
-	font-size: 18px; 
-	line-height: 22px; 
-}
-
-.bodybold { 
-	font-size: 18px; 
-	line-height: 17px; 
-}
-
-.bulletsarrrow {
-	font-size: 18px; 
-	line-height: 22px; 
-}
-
-.bullets {
-	font-size: 18px; 
-	line-height: 16px; 
-}
-	
-.bullets2 {
-	font-size: 18px; 
-	line-height: 16px; 
-}
 	
 .bodyfooter { 
 	font-size: 16px; 
@@ -907,10 +913,7 @@ ol {
 }
 	
 
-ol {
-    margin-top: -15px;
-}
-	
+
 
 
 .hidden-xs {
