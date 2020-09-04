@@ -488,7 +488,7 @@ a{
 	color: #111;
 }
 
-.bullets {
+.bullets2 {
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	list-style-type: disc;
 	font-size: 18px; 
@@ -515,6 +515,12 @@ ol {
 }
 	
 .bullets {
+	font-size: 16px; 
+	line-height: 18px; 
+}
+
+
+.bullets2 {
 	font-size: 16px; 
 	line-height: 18px; 
 }
