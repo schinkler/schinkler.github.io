@@ -9,38 +9,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 	
-	
-<body>
 
-	<div id="top"></div>
-	
-	<div class="sticky">
-
-        <header class="header">
-            <a href="#top" class="logo"><img class="logo" src="images/pslogoblack.png" width="175" height="auto" alt="Physician Services"></a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-            <ul class="menu">
-						<li><a href="#service">Services</a></li>
-						<li><a href="index.html#programs">Programs</a></li>
-						<li><a href="#personalized">Personalized</a></li>
-						<li><a href="about.html">About</a></li>
-						<li><a href="contact.html">Contact</a></li>
-            </ul>
-        </header>
-
-	</div>
-		
-		
-		
-		
-
-
-	
-	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 	
 	
@@ -60,7 +32,7 @@ $(document).ready(function(){
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top-120
+        scrollTop: $(hash).offset().top -120
       }, 800, function(){
       });
     } // End if
@@ -81,9 +53,33 @@ if ( hash == '' || hash == '#' || hash == undefined ) return false;
 } );
 	
 </script>
+	
+	
+<body>
 
+<div id="top"></div>
 	
 	
+	
+	
+	
+<div class="sticky">
+
+	<header class="header">
+    	<a href="#top" class="logo"><img class="logo" src="images/pslogoblack.png" width="175" height="auto" alt="Physician Services"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            	<ul class="menu">
+					<li><a href="index.html#service">Services</a></li>
+					<li><a href="index.html#programs">Programs</a></li>
+					<li><a href="index.html#personalized">Personalized</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+	</header>
+
+</div>
+		
 	
 	
 	
@@ -99,6 +95,10 @@ if ( hash == '' || hash == '#' || hash == undefined ) return false;
 	</div>	
 </div>	
 
+	
+	
+	
+	
 <div class="parent" id="service">
 
 	<div class="container">
@@ -133,15 +133,15 @@ if ( hash == '' || hash == '#' || hash == undefined ) return false;
 						<li class="bullets">Weekly Phone Conferences</li>
 					</ul>				
 
-
 		</div>
-		
 	</div>	
-
 </div>
 
 	
-<div class="parent" id="programs">
+	
+	
+	
+<div class="parent2" id="programs">
 
 	<div class="container">
 		
@@ -154,35 +154,29 @@ if ( hash == '' || hash == '#' || hash == undefined ) return false;
 			<p class="body">Utilizing your office management software, we will process the insurance billing, post insurance payments and adjustments, and enter all our notes from conversations with insurance companies. With remote access you are in total control.</p>
 
 			<p class="body">We provide chiropractors with a personal medical billing specialist who addresses the specific needs of our client in regards to insurance filing, collections and follow-up.</p>
+			
 
-			<button onclick="myFunction()" type="button" class="button">MORE INFO +</button>
 			
 		</div>
+	</div>
+</div>	
+
 	
 		
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
-<script>
-function myFunction() {
-  var x = document.getElementById("moreinfo");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-	$(document).ready(function(){
-    $("button").click(function(){
-    $(this).text($(this).text() == 'CLOSE INFO -' ? 'MORE INFO +' : 'CLOSE INFO -');
-  });
-});
-</script>
+	
+	
+	<div>
+	
+    <input class="info-btn" type="checkbox" id="info-btn" />
+    <label class="info-icon" for="info-btn">MORE INFO &nbsp; <span class="button-icon"></span></label>		
+		
+		
+			<div class="infoblock">
 
-			<div class="moreinfo" id="moreinfo" style="display: none">
+				<span class="infoheadline">Solution</span>			
 
-				<p class="infoheadline">Solution</p>			
-
-				<p class="bodybold">With all of our programs, you will have complete access to all of your:</p>
+			  <p class="bodybold">With all of our programs, you will have complete access to all of your:</p>
 				<ol>
 					<li class="bullets">Data</li>
 					<li class="bullets">Reports</li>
@@ -261,8 +255,12 @@ function myFunction() {
 				<ol>
 					<li class="bullets">Admin time ($35.00 per hour) on a per claim rate agreement.</li>
 				</ol>
+				
+					<br><br><br>
+
 		</div>	
-	</div>
+	
+</div>
 	
 	
 	
@@ -305,11 +303,6 @@ function myFunction() {
 			</div>
 
 	</div>
-	
-	</div>	
-
-	
-	
 </div>
 
 	
