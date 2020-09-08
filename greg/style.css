@@ -706,19 +706,19 @@ ol {
 .program-1{
     flex:1;
     order:1;
-	background-image:url('images/programa.png');
+	background-image:url("images/programa.png");
 	background-repeat:no-repeat;
 }
 .program-2{
     flex:1;
     order:2;
-	background-image:url('images/programb.png');
+	background-image:url("images/programb.png");
 	background-repeat:no-repeat;
 }
 .program-3{
 	flex:1;
 	order: 3;
-	background-image:url('images/programc.png');
+	background-image:url("images/programc.png");
 	background-repeat:no-repeat;
 }
 .button {
