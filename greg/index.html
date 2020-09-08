@@ -13,55 +13,19 @@
 </head>
 	
 
-<script>
-	
-	
-	
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top -120
-      }, 800, function(){
-      });
-    } 
-  });
-});
-	
-jQuery ( document ).ready ( function($) {
-var hash= window.location.hash
-if ( hash == '' || hash == '#' || hash == undefined ) return false;
-      var target = $(hash);
-      headerHeight = 120;
-      target = target.length ? target : $('[name=' + hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').stop().animate({
-          scrollTop: target.offset().top - 120 //offsets for fixed header
-        }, 'linear');
-      }
-} );
-	
-
- jQuery( document ).ready(function() {
-      jQuery('.xmenu a').click(function(){ 
-      jQuery('.xmenu').css('height', '0');
-      jQuery('.xmenu').removeClass('in');
-    });  
- });	
-	
-</script>	
 	
 <body>
 
+	
+	
+	
+	
 <div id="top"></div>
 	
 	
 	
 <div class="sticky">
-	
+
 	<header class="header">
     	<a href="#top" class="logo"><img class="logo" src="images/pslogoblack.png" width="175" height="auto" alt="Physician Services"></a>
 		
@@ -76,10 +40,6 @@ if ( hash == '' || hash == '#' || hash == undefined ) return false;
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 	</header>
-	
-	
-	
-	
 	
 </div>
 		
@@ -303,6 +263,50 @@ if ( hash == '' || hash == '#' || hash == undefined ) return false;
 	<br><a href="mailto:info@psmbs.com" style="text-decoration: none; color: #999">info@psmbs.com</a></p>
 </div>
 	
+	
+
+	
+	
+	
+<script>
+	
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top -120
+      }, 800, function(){
+      });
+    } 
+  });
+});
+	
+jQuery ( document ).ready ( function($) {
+var hash= window.location.hash
+if ( hash == '' || hash == '#' || hash == undefined ) return false;
+      var target = $(hash);
+      headerHeight = 120;
+      target = target.length ? target : $('[name=' + hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').stop().animate({
+          scrollTop: target.offset().top - 120 //offsets for fixed header
+        }, 'linear');
+      }
+} );
+	
+
+ jQuery( document ).ready(function() {
+      jQuery('.xmenu a').click(function(){ 
+      jQuery('.xmenu').css('height', '0');
+      jQuery('.xmenu').removeClass('in');
+    });  
+ });	
+	
+</script>	
+
 	
 	
 	
