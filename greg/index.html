@@ -1,6 +1,5 @@
 <!doctype html>
-<html>
-<head>
+<html><head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -10,11 +9,61 @@
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
 	
+	
+<script>
+
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+
+		if (this.hash !== "") {
+		  event.preventDefault();
+		  var hash = this.hash;
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top -120
+		  }, 800, function(){
+		  });
+		} 
+	  });
+	});
+
+	jQuery ( document ).ready ( function($) {
+	var hash= window.location.hash
+	if ( hash == '' || hash == '#' || hash == undefined ) return false;
+		  var target = $(hash);
+		  headerHeight = 120;
+		  target = target.length ? target : $('[name=' + hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').stop().animate({
+			  scrollTop: target.offset().top - 120 //offsets for fixed header
+			}, 'linear');
+		  }
+	} );
+
+
+
+		
+		
+	 jQuery( document ).ready(function() {
+		  jQuery('.xmenu a').click(function(){ 
+		  jQuery('.xmenu').css('height', '0');
+		  jQuery('.xmenu').removeClass('in');
+		});  
+	 });	
+		
 
 	
+	
+</script>	
+	
+	
+</head>
+	
 <body>
+
+
+	
+	
 
 	
 	
@@ -33,11 +82,11 @@
 		
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             	<ul class="menu">
-					<li><a href="index.html#service">Services</a></li>
-					<li><a href="index.html#programs">Programs</a></li>
-					<li><a href="index.html#personalized">Personalized</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li class="list"><a href="index.html#service">Services</a></li>
+					<li class="list"><a href="index.html#programs">Programs</a></li>
+					<li class="list"><a href="index.html#personalized">Personalized</a></li>
+					<li class="list"><a href="about.html">About</a></li>
+					<li class="list"><a href="contact.html">Contact</a></li>
 				</ul>
 	</header>
 	
@@ -48,77 +97,69 @@
 	
 	
 	
-	
-	
-<div class="parent">
-   <div class="container">
-	    <div class="item1"><img src="images/Doctor.jpg" alt="" class="pimage"></div>
-	  	<div class="item2"><span class="headline">Need help with your insurance billing?</span></div>
-		<div class="item3"><span class="intro">We are the solution to all your Chiropractic insurance billing needs.</span></div>
-	</div>	
+<div class="container">
+	<div class="item1"><img src="images/Doctor.jpg" alt="" class="pimage"></div>
+	<div class="item2"><span class="headline">Need help with your insurance billing?</span></div>
+	<div class="item3"><span class="intro">We are the solution to all your Chiropractic insurance billing needs.</span></div>
 </div>	
 
 	
 	
+<div class="space"></div>	
 	
 	
-<div class="parent" id="service">
-	<div class="container">
-	    <div class="mouse"><img src="images/mouse.jpg" alt="" class="pimage"></div>
-	  	<div class="item4"><span class="subheadline">We provide a full range of billing services for all Chiropractic and multidisciplinary practices</span></div>	
-		<div class="item5">
-			<ul>
-				<li class="bullets2">Electronic and paper claim submissions
-			<ul> 
-				<li class="bulletsarrow">Commercial</li>
-				<li class="bulletsarrow">Government</li>
-				<li class="bulletsarrow">Personal Injury</li>
-				<li class="bulletsarrow">Workers Compensation</li>
-				<li class="bulletsarrow">Secondary Insurance</li>
-			</ul>
-			</li>
-				<li class="bullets2">Accounts Receivable Management
-			<ul>
-				<li class="bulletsarrow">Extensive Insurance Follow-up</li>
-			</ul>
-			</li>
-				<li class="bullets2">Posting of Insurance Payments
-			<ul>
-				<li class="bulletsarrow">Thorough review of incorrectly paid claims</li>
-			</ul>
-			</li>
-				<li class="bullets2">Denial Review and Management</li>
-				<li class="bullets2">Appeals of Denials and Low Paid Claims</li>
-				<li class="bullets2">Fee and Code Evaluation</li>
-				<li class="bullets2">Weekly Phone Conferences</li>
-			</ul>				
-		</div>
-	</div>	
-</div>
-
-	
-	
-	
-	
-<div class="parent2" id="programs">
-	<div class="container">
-	    <div class="ipad"><img src="images/ipad.jpg" alt="" class="pimage"></div>
-	  	<div class="item4"><span class="subheadline">How our three programs work…</span></div>			
-		<div class="item5">
-			<p class="body">We offer three remote access programs and a full chiropractors’ needs.</p>
-			<p class="body">Utilizing your office management software, we will process the insurance billing, post insurance payments and adjustments, and enter all our notes from conversations with insurance companies. With remote access you are in total control.</p>
-			<p class="body">We provide chiropractors with a personal medical billing specialist who addresses the specific needs of our client in regards to insurance filing, collections and follow-up.</p>
-		</div>
+<div class="container" id="service">
+	<div class="mouse" ><img src="images/mouse.jpg" alt="" class="pimage"></div>
+	<div class="item4"><span class="subheadline">We provide a full range of billing services for all Chiropractic and multidisciplinary practices</span></div>	
+	<div class="item5">
+		<ul>
+			<li class="bullets2">Electronic and paper claim submissions
+		<ul> 
+			<li class="bulletsarrow">Commercial</li>
+			<li class="bulletsarrow">Government</li>
+			<li class="bulletsarrow">Personal Injury</li>
+			<li class="bulletsarrow">Workers Compensation</li>
+			<li class="bulletsarrow">Secondary Insurance</li>
+		</ul>
+		</li>
+			<li class="bullets2">Accounts Receivable Management
+		<ul>
+			<li class="bulletsarrow">Extensive Insurance Follow-up</li>
+		</ul>
+		</li>
+			<li class="bullets2">Posting of Insurance Payments
+		<ul>
+			<li class="bulletsarrow">Thorough review of incorrectly paid claims</li>
+		</ul>
+		</li>
+			<li class="bullets2">Denial Review and Management</li>
+			<li class="bullets2">Appeals of Denials and Low Paid Claims</li>
+			<li class="bullets2">Fee and Code Evaluation</li>
+			<li class="bullets2">Weekly Phone Conferences</li>
+		</ul>				
 	</div>
 </div>	
+
+	
+<div class="space"></div>	
+
+	
+	
+<div class="container" id="programs">
+	<div class="ipad"><img src="images/ipad.jpg" alt="" class="pimage"></div>
+	<div class="item4"><span class="subheadline">How our three programs work…</span></div>			
+	<div class="item5">
+		<p class="body">We offer three remote access programs and a full chiropractors’ needs.</p>
+		<p class="body">Utilizing your office management software, we will process the insurance billing, post insurance payments and adjustments, and enter all our notes from conversations with insurance companies. With remote access you are in total control.</p>
+		<p class="body">We provide chiropractors with a personal medical billing specialist who addresses the specific needs of our client in regards to insurance filing, collections and follow-up.</p>
+		</div>
+</div>
 
 	
 		
 	
 	
 	
-	
-<div>
     <input class="info-btn" type="checkbox" id="info-btn" />
     <label class="info-icon" for="info-btn">MORE INFO &nbsp; <span class="button-icon"></span></label>		
 	<div class="infoblock">
@@ -191,8 +232,6 @@
 				</ol>
 		<br><br><br>
 	</div>	
-</div>
-	
 	
 	
 	
@@ -238,21 +277,33 @@
 </div>
 	
 	
+<div class="space"></div>	
+
+	
+
+<div class="container" id="personalized">
+	<div class="mugs"><img src="images/mugs.jpg" alt="" class="pimage"></div>
+	<div class="item4"><span class="subheadline">We Provide Personalized Service</span></div>			
+	<div class="item5">
+		<p class="body">After 20 years we have learned that weekly or bi monthly phone meetings with our clients keeps them informed on their accounts and collections.   One of the many keys to our success is to stay in touch with our clients so they feel in control and that we are on top of their money. We value our clients input to better our service. We service doctors from coast to coast.
+		</p>
+	</div>
+</div>
 
 	
 	
 	
-<div class="parent" id="personalized">
-	<div class="container">
-	    <div class="mugs"><img src="images/mugs.jpg" alt="" class="pimage"></div>
-	  	<div class="item4"><span class="subheadline">We Provide Personalized Service</span></div>			
-		<div class="item5">
-			<p class="body">After 20 years we have learned that weekly or bi monthly phone meetings with our clients keeps them informed on their accounts and collections.   One of the many keys to our success is to stay in touch with our clients so they feel in control and that we are on top of their money. We value our clients input to better our service. We service doctors from coast to coast.
-			</p>
-		</div>
-	</div>	
-</div>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+<div class="space"></div>	
+
 
 <div class="footer"><a href="#top"><img class="logo" src="images/pslogowhite.png" width="240" height="auto" alt="Physician Services"></a>
 	<p class="bodyfooterbold">Greg Barnes<br>
@@ -261,53 +312,11 @@
 	<a href="tel:+1-800-208-1009" style="text-decoration: none; color: #999">800.208.1009</a>
 	<br><a href="tel:+1-954-495-6845" style="text-decoration: none; color: #999">954.495.6845</a>
 	<br><a href="mailto:info@psmbs.com" style="text-decoration: none; color: #999">info@psmbs.com</a></p>
+	<p class="bodyfooter">© 2020 Physician Services</p>
 </div>
 	
 	
 
-	
-	
-	
-<script>
-	
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top -120
-      }, 800, function(){
-      });
-    } 
-  });
-});
-	
-jQuery ( document ).ready ( function($) {
-var hash= window.location.hash
-if ( hash == '' || hash == '#' || hash == undefined ) return false;
-      var target = $(hash);
-      headerHeight = 120;
-      target = target.length ? target : $('[name=' + hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').stop().animate({
-          scrollTop: target.offset().top - 120 //offsets for fixed header
-        }, 'linear');
-      }
-} );
-	
-
- jQuery( document ).ready(function() {
-      jQuery('.xmenu a').click(function(){ 
-      jQuery('.xmenu').css('height', '0');
-      jQuery('.xmenu').removeClass('in');
-    });  
- });	
-	
-</script>	
-
-	
 	
 	
 </body>
