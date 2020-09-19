@@ -856,8 +856,9 @@ ol {
 	border-radius: 3px;
 	font-size: 17px;
 	font-weight: 200; 
-	width: 95%;
-    padding: 15px;
+	text-indent: 15px;
+	width: 100%;
+    padding: 10px 0px;
     background:#f8f8f8;
     border:1px solid rgba(0, 0, 0, 0.075);
     margin-bottom:30px;
