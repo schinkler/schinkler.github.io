@@ -49,7 +49,7 @@ body {
 	outline:0px solid #1752A1;
 	text-transform: uppercase;
 	font-size: 12px;
-	color: #898989;
+	color: #666666;
 	letter-spacing: 0.08em;
 	padding: 20px 40px 20px 0px;
 	border-right: 1px solid #ECECEC;
@@ -680,13 +680,14 @@ ol {
 }
 .info-icon{
 	letter-spacing: 1.5px;
-	font-size: 13px; 
-	color: #333;
-	border-radius: 3px;
-	border: 1px solid #C9C9C9;
-	background: #ddd;
+	font-size: 14px;
+	font-weight: 600;
+	color: #F3F3F3;
+	border-radius: 50px;
+	border: 0px solid #C9C9C9;
+	background-color: #52878C;
 	display: inline-flex;
-	padding: 5px 12px 5px 10px;
+	padding: 15px 20px 15px 20px;
 	position: relative;
 	top: 0px;
   	align-items: center;
@@ -695,13 +696,13 @@ ol {
 	margin: 0px 120px 10px 120px;
 }
 .info-icon:hover {
-	border: 1px solid #777;
+	border: 0px solid #777;
 	background-color: #D80000;
 	outline:none;
-	color: #000;
+	color: #F3F3F3;
 }
 .info-icon .button-icon{
-	background: #333;
+	background: #F3F3F3;
 	position: relative;
 	display: block;
 	height: 2px;
@@ -709,7 +710,7 @@ ol {
 	transition: background 0.2s ease-out;
 }
 .info-icon .button-icon:before{
-	background: #333;
+	background: #F3F3F3;
 	content: "";
 	display: block;
 	height: 100%;
@@ -720,7 +721,7 @@ ol {
 	top: 0px;
 }
 .info-icon .button-icon:after{
-	background: #333;
+	background: #F3F3F3;
 	content: "";
 	display: block;
 	height: 100%;
@@ -834,20 +835,21 @@ ol {
 }
 .button {
     text-decoration: none;
-	padding: 5px 10px;
-	font-size: 12px; 
+	padding: 8px 15px;
+	font-size: 13px; 
 	letter-spacing: 1.25px;
-	border-radius: 3px;
-	border: 1px solid #C9C9C9;
-	color: #333;	
-	background-color: #DDD;
+	font-weight: 600;
+	border-radius: 50px;
+	border: 0px solid #C9C9C9;
+	color: #F3F3F3;	
+	background-color: #52878C;
 	cursor: pointer;
 	margin: 50px 0px 0px 0px;
 }
 .button:hover {
-	border: 1px solid #777;
+	border: 0px solid #777;
 	background-color: #D80000;
-	color: #000	
+	color: #F3F3F3;	
 }
 /*  END 3 PROGRAMS  */
 
@@ -952,25 +954,24 @@ ol {
 
   .form-btn{
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-    text-decoration: none;
-	padding: 5px 10px;
-	font-size: 12px; 
+	padding: 8px 15px;
+	font-size: 13px; 
 	letter-spacing: 1.25px;
+	font-weight: 600;
+	border-radius: 50px;
+	border: 0px solid #C9C9C9;
+	color: #F3F3F3;	
+	background-color: #52878C;
 	height: inherit;
 	width: inherit;
-	font-weight: 400; 
-	border-radius: 3px;
-	border: 1px solid #C9C9C9;
-	color: #333;	
-	background-color: #DDD;
 	cursor: pointer;
 	margin: 10px 0px 0px 0px;
   }
 
   .form-btn:hover{
-	border: 1px solid #777;
+	border: 0px solid #777;
 	background-color: #D80000;
-	color: #000	
+	color: #F3F3F3;	
   }
 
   .form-btn:active{
