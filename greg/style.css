@@ -951,6 +951,7 @@ ol {
 /* Send Button Styles */
 
   .form-btn{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
     text-decoration: none;
 	padding: 5px 10px;
 	font-size: 12px; 
