@@ -912,6 +912,7 @@ ol {
 }
 
   .form{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	letter-spacing: 0.7px;
 	border-radius: 3px;
 	font-size: 17px;
