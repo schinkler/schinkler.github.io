@@ -1,3 +1,22 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @charset "UTF-8";
 /* CSS Document */
 
@@ -158,7 +177,7 @@ ul li a:hover {
 	text-transform: uppercase;
 	font-style: normal; 
 	font-variant: normal; 
-	line-height: 1.5em; 
+	line-height: 1.1em; 
 	font-weight: 200;
 	letter-spacing: 5px;
 	color: #4A4A4A;
@@ -538,23 +557,28 @@ ul li a:hover {
 		display: none;
 }
 	
-	.forth {
-    	grid-column: 1 / -1;
-}
-
-	.fifth {
-   		grid-column: 1/ -1;
-		padding: 15px;
-}
 	
-	.sixth {
-		grid-column: 1 / -1;
-		padding: 15px;
-}
 
-	.seventh {
-		grid-column: 1 / -1;
-		padding: 15px;
+.second {
+    grid-column: 3 / 10;
+}
+.third {
+    grid-column: 3 / 10;
+}	
+.forth {
+    grid-column: 1 / -1;
+}
+.fifth {
+   	grid-column: 1/ -1;
+	padding: 15px;
+}
+.sixth {
+	grid-column: 1 / -1;
+	padding: 15px;
+}
+.seventh {
+	grid-column: 1 / -1;
+	padding: 15px;
 }
 	
 
@@ -621,25 +645,22 @@ ul li a:hover {
 		grid-gap: 15px;
 }
 
-	.container {
-   		grid-gap: 15px;
-		padding-top: 15px;
-		padding-bottom: 15px;
+.container {
+   	grid-gap: 25px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.forth {
+    grid-column: 1 / -1;
+}
+.fifth {
+   	grid-column: 1/ -1;
+	background: #EEE;
+	padding: 10px;
 }
 
-	
-	.forth {
-    	grid-column: 1 / -1;
-}
-
-	.fifth {
-   		grid-column: 1/ -1;
-		background: #EEE;
-		padding: 10px;
-}
-
-	.hidden-xs {
-		display: none;
+.hidden-xs {
+	display: none;
 }
 }
 
