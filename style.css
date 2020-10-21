@@ -573,10 +573,11 @@ ul li a:hover {
 	.headline { 
 		font-size: 1.15em; 
 		line-height: 1.0em; 
+		letter-spacing: 2px;
 }
 	
 	.subhead { 
-		font-size: 1.25em; 
+		font-size: 1.1em; 
 		line-height: 1.0em; 
 }
 
@@ -596,7 +597,7 @@ ul li a:hover {
 }
 	
 	.content {
-  		padding: 10px 20px;
+  		padding: 40px 20px;
 }
 
 	.footer {
@@ -626,9 +627,6 @@ ul li a:hover {
 		padding-bottom: 15px;
 }
 
-	.sticky + .content {
-  		padding-top: 70px;
-}
 	
 	.forth {
     	grid-column: 1 / -1;
