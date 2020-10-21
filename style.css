@@ -19,6 +19,15 @@ body {
 /* NAVIGATION */
 
 
+div.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	padding: 0px;
+	z-index: 3;
+}
+
+
 #navbar {
   	overflow: hidden;
 	border-width: 1px 0px 1px 0; /* top right bottom left */
@@ -145,13 +154,14 @@ ul li a:hover {
 
 .headline { 
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-	font-size: 1.5em; 
+	font-size: 34px; 
 	text-transform: uppercase;
 	font-style: normal; 
 	font-variant: normal; 
 	line-height: 1.5em; 
-	letter-spacing: 0.05em;
-	color: #444;
+	font-weight: 200;
+	letter-spacing: 5px;
+	color: #4A4A4A;
 	text-align: center;
 }
 
@@ -204,7 +214,7 @@ ul li a:hover {
 .subhead { 
 	font-family: 'EB Garamond', serif; 
 	text-decoration: none;
-	font-size: 24px; 
+	font-size: 20px; 
 	font-style: oblique; 
 	font-style: italic; 
 	font-variant: normal; 
@@ -231,18 +241,10 @@ ul li a:hover {
 
 
 .content {
-  padding: 50px 100px;
+  padding: 100px 150px 150px 150px;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 
-.sticky + .content {
-  padding-top: 110px;
-}
 
 
 
@@ -281,26 +283,48 @@ ul li a:hover {
 
 
 
+
+
+
+
+
+
 .container {
-    height: 100%; 
-    display: grid;
-    grid-gap: 60px;
+	border: 0px solid red;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto auto;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	grid-template-rows: auto;
+	grid-gap: 50px;
+	padding: 100px 0px 0px 0px;
+    justify-content: left;
+    align-content: center;
 }
 
 .first {
+	border: 0px solid red;
     grid-column: 1 / -1;
+	position: relative;
+	width: 100%;
+	padding-bottom: 0px;
 }
 
 .second {
+	border: 0px solid red;
     grid-column: 1 / 7;
+	position: relative;
+	width: 100%;
+	padding-bottom: 0px;
 }
 
 .third {
+	border: 0px solid red;
     grid-column: 7 / -1;
+	position: relative;
+	width: 100%;
+	padding-bottom: 0px;
 }
 
 .forth {
@@ -325,6 +349,16 @@ ul li a:hover {
 	padding: 30px;
 }
 
+.graphicimage {
+	border: 0px solid #d2d2d2;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
+
+
 
 
 
@@ -332,17 +366,15 @@ ul li a:hover {
 	border: 0px solid red;
 	position: relative;
 	width: 100%;
-	height: inherit;
+	height: 100%;
 	display: grid;
-   	grid-template-columns: auto auto;
+   	grid-template-columns: auto auto auto;
 	grid-template-rows: auto auto;
-	grid-gap: 50px;
-	padding: 50px 0px 0px 50px;
+	grid-gap: 75px;
+	padding: 100px 0px 0px 0px;
     justify-content: left;
     align-content: center;
-	z-index: -1;
 }
-
 
 
 .smallcontainer {
@@ -357,11 +389,12 @@ ul li a:hover {
 }
 
 .overlay {
+	border: 0px solid red;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-	background: rgba(78, 75, 75, 0.85);
+	background: rgba(85, 75, 75, 0.75);
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -372,6 +405,25 @@ ul li a:hover {
 	height: 100%;
 }
 
+.text a{
+	border: 0px solid red;
+	color: #E5E5E5;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-style: normal; 
+	font-variant: normal; 
+	letter-spacing: 0.05em;
+	padding: 0px 0px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
 
 
 /*VIDEO*/
@@ -456,7 +508,7 @@ ul li a:hover {
 }
 	
 	.content {
-  		padding: 25px 50px;
+  		padding: 50px 50px;
 }	
 
 	.footer {
@@ -476,14 +528,11 @@ ul li a:hover {
 }
 
 	.container {
-   		grid-gap: 35px;
-		padding-top: 35px;
+   		grid-gap: 50px;
+		padding-top: 50px;
 		padding-bottom: 35px;
 }
 	
-	.sticky + .content {
-  		padding-top: 85px;
-}
 
 	.hidden-xs {
 		display: none;
