@@ -560,10 +560,10 @@ ul li a:hover {
 	
 
 .second {
-    grid-column: 3 / 10;
+    grid-column: 3 / 11;
 }
 .third {
-    grid-column: 3 / 10;
+    grid-column: 3 / 11;
 }	
 .forth {
     grid-column: 1 / -1;
