@@ -5,7 +5,6 @@
 
 
 
-
 body {
 	margin: 0;
 	-moz-osx-font-smoothing: grayscale;
@@ -883,7 +882,7 @@ ol {
 .quote-container div{
 	border: 1px #ddd solid;
 	border-radius: 5px;
-	background-color: #FAFAFA;
+	background-color: #FCFCFC;
 	padding: 8px 15px 10px 60px;
 }
 .quote-1{
@@ -892,6 +891,19 @@ ol {
 	background-repeat:no-repeat;
 }
 /*  END QUOTES  */
+
+
+
+
+
+
+
+/* TEST */
+
+
+
+/*  END TEST  */
+
 
 
 
