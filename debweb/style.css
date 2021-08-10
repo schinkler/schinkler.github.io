@@ -146,13 +146,13 @@ body {
 
 @media (max-width:830px){	/*TABLET*/
 .header .logo{
-	padding: 10px 20px;
+	padding: 10px 12px;
 	}
 }
 
 @media (max-width:412px){	/*MOBILE*/
 .header .logo{
-	padding: 10px 15px;
+	padding: 10px 8px;
 	}
 }
 
@@ -175,7 +175,7 @@ body {
 }
 @media (max-width:830px){	/*TABLET*/
 .homelogo { 
-	padding: 50px 25px 0px 25px;
+	padding: 100px 25px 0px 25px;
 	}
 .homelogo img{ 
 	width: 300px;
@@ -184,7 +184,7 @@ body {
 }
 @media (max-width:412px){	/*MOBILE*/
 .homelogo { 
-	padding: 30px 10px 0px 10px;
+	padding: 75px 10px 0px 10px;
 	}
 .homelogo img{ 
 	width: 250px;
@@ -200,12 +200,11 @@ body {
 }
 @media (max-width:830px){	/*TABLET*/
 .homeimg_web { 
-	padding: 50px 25px 25px 25px;
+	padding: 50px 24px 25px 24px;
 	}
 }
 @media (max-width:412px){	/*MOBILE*/
 .homeimg_web { 
-	padding: 30px 10px 30px 10px;
 	display: none;
 	}
 }
@@ -218,7 +217,7 @@ body {
 @media (max-width:412px){	/*MOBILE*/
 .homeimg_mobile { 
 	display: block;
-	padding: 30px 10px 30px 10px;
+	padding: 50px 16px 30px 16px;
 	}
 }
 
@@ -537,7 +536,7 @@ body {
 }
 @media (max-width:412px){	/*MOBILE*/
 .footer {
-	padding: 30px 10px 20px 10px;
+	padding: 30px 16px 20px 16px;
 	}
 .footer img {
 	width: 27px;
