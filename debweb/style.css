@@ -253,7 +253,7 @@ body {
 	font-style: normal; 
 	font-variant: normal; 
 	letter-spacing: 3px;
-	color: #444;
+	color: #222;
 	text-align: left;
 }
 @media (max-width:830px){	/*TABLET*/
@@ -266,6 +266,30 @@ body {
 .headline { 
 	font-size: 28px; 
 	line-height: 30px; 
+	}
+}
+
+.subheadline { 
+    font-family: "Playfair Display";
+	font-size: 28px; 
+	line-height: 36px; 
+	text-transform: none;
+	font-style: normal; 
+	font-variant: normal; 
+	letter-spacing: 0.2px;
+	color: #444;
+	text-align: center;
+}
+@media (max-width:830px){	/*TABLET*/
+.subheadline { 
+	font-size: 24px; 
+	line-height: 30px; 
+	}
+}
+@media (max-width:412px){	/*MOBILE*/
+.subheadline { 
+	font-size: 20px; 
+	line-height: 26px; 
 	}
 }
 
@@ -283,6 +307,15 @@ body {
 	letter-spacing: 0.5px;
 	color: #111;
 }
+.bodybold { 
+	font-size: 18px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400;
+	line-height: 26px; 
+	letter-spacing: 0.5px;
+	color: #333;
+}
 .bodyhead { 
 	font-size: 22px; 
 	text-transform: uppercase;
@@ -294,26 +327,7 @@ body {
 	color: #333;
 }
 
-.bodybold { 
-	font-size: 18px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 400;
-	line-height: 26px; 
-	letter-spacing: 0.5px;
-	color: #333;
-}
-.bodysmall { 
-	text-decoration: none;
-	font-size: 16px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 100;
-	line-height: 22px; 
-	letter-spacing: 0.5px;
-	color: #111;
-}
-.bodyfooter { 
+.footersmall { 
 	text-decoration: none;
 	font-size: 16px; 
 	font-style: normal; 
@@ -321,7 +335,17 @@ body {
 	font-weight: 100;
 	line-height: 20px; 
 	letter-spacing: 0.5px;
-	color: #999;
+	color: #111;
+}
+.footersmall { 
+	text-decoration: none;
+	font-size: 16px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 100;
+	line-height: 20px; 
+	letter-spacing: 0.5px;
+	color: #111;
 }
 .footerheadline { 
     font-family: "Playfair Display";
@@ -333,11 +357,6 @@ body {
 	letter-spacing: 0.75px;
 	color: #444;
 }
-
-
-
-
-
 
 /* END FONT */
 
