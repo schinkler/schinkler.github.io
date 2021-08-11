@@ -337,7 +337,7 @@ body {
 	letter-spacing: 0.5px;
 	color: #111;
 }
-.footersmall { 
+.footerlight { 
 	text-decoration: none;
 	font-size: 16px; 
 	font-style: normal; 
@@ -345,7 +345,7 @@ body {
 	font-weight: 100;
 	line-height: 20px; 
 	letter-spacing: 0.5px;
-	color: #111;
+	color: #666;
 }
 .footerheadline { 
     font-family: "Playfair Display";
