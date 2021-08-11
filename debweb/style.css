@@ -287,16 +287,6 @@ body {
 
 
 
-.footerheadline { 
-    font-family: "Playfair Display";
-	font-size: 20px; 
-	text-transform: uppercase;
-	font-style: normal; 
-	font-variant: normal; 
-	line-height: 22px; 
-	letter-spacing: 0.75px;
-	color: #444;
-}
 .infoheadline { 
     font-family: "Playfair Display";
 	font-size: 30px; 
@@ -355,15 +345,6 @@ body {
 	letter-spacing: 0.5px;
 	color: #111;
 }
-.bodysmallboldit { 
-	font-size: 16px; 
-	font-style: italic; 
-	font-variant: normal; 
-	font-weight: 400;
-	line-height: 22px; 
-	letter-spacing: 0.5px;
-	color: #444;
-}
 .bodybold { 
 	font-size: 18px; 
 	font-style: normal; 
@@ -372,6 +353,16 @@ body {
 	line-height: 26px; 
 	letter-spacing: 0.5px;
 	color: #333;
+}
+.footerheadline { 
+    font-family: "Playfair Display";
+	font-size: 20px; 
+	text-transform: uppercase;
+	font-style: normal; 
+	font-variant: normal; 
+	line-height: 22px; 
+	letter-spacing: 0.75px;
+	color: #444;
 }
 .bodyfooter { 
 	text-decoration: none;
@@ -383,17 +374,6 @@ body {
 	letter-spacing: 1px;
 	color: #999;
 }
-.bodyfooterbold { 
-	text-decoration-style: none;
-	font-size: 15px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 600;
-	line-height: 20px; 
-	letter-spacing: 1px;
-	color: #999; 
-}
-
 
 @media (max-width:830px){	/*TABLET*/
 .subheadline { 
@@ -429,14 +409,6 @@ body {
 	font-size: 16px; 
 	line-height: 22px; 
 	}
-.bodyfooter { 
-	font-size: 16px; 
-	line-height: 20px; 
-	}
-.bodyfooterbold { 
-	font-size: 16px; 
-	line-height: 20px; 
-}
 .hidden-xs {
 	display: none;
 	}
@@ -469,7 +441,7 @@ body {
 	font-variant: normal; 
 	font-weight: 100;
 	line-height: 30px; 
-	letter-spacing: 0.5px;
+	letter-spacing: 0px;
 	color: #000;
 }
 .c { 
@@ -537,61 +509,62 @@ body {
 
 
 
+.imagediv{
+	display: grid;
+	grid-gap: 40px;
+	grid-template-columns: 1fr 1fr;
+	margin: 0px 40px 40px 40px;
+}
+@media (max-width:830px){		/*TABLET*/
+	.imagediv{
+	grid-gap: 24px;
+	margin: 0px 24px 24px 24px;
+	}
+}
+@media (max-width:412px){  		/*MOBILE*/
+	.imagediv{
+	grid-gap: 16px;
+	margin: 0px 16px 16px 16px;
+	}
+}
 
 
 
 
 
+/*  PRICES  */
 
-/*  QUOTES  */
-
-.quote-container{
+.prices{
 	display: grid;
 	grid-gap: 40px;
 	grid-template-columns: 1fr 1fr;
 	margin: 0px 40px 40px 40px;
 }
 @media (max-width:1100px){		/*SMALLER SCREEN*/
-	.quote-container{
+	.prices{
 	grid-template-columns: 1fr;
 	}
 }
 @media (max-width:830px){		/*TABLET*/
-	.quote-container{
+	.prices{
 	grid-gap: 24px;
 	margin: 0px 24px 24px 24px;
 	}
 }
 @media (max-width:412px){  		/*MOBILE*/
-	.quote-container{
+	.prices{
 	grid-gap: 16px;
 	margin: 0px 16px 16px 16px;
 	}
 }
-.quote-container div{
+.prices div{
 	border: 0px #333 solid;
 	border-radius: 0px;
 	background-color: #eeece8;
 	padding: 10px 10px 20px 25px;
 }
 
-.listing { 
-	font-size: 18px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 100;
-	line-height: 32px; 
-	letter-spacing: 0.5px;
-	color: #111;
-}
-
-
-.quote-1{
-	flex:1;
-	background-image:url("");
-	background-repeat:no-repeat;
-}
-/*  END QUOTES  */
+/*  END PRICES  */
 
 
 
