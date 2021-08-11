@@ -256,14 +256,12 @@ body {
 	color: #444;
 	text-align: left;
 }
-
 @media (max-width:830px){	/*TABLET*/
 .headline { 
 	font-size: 34px; 
 	line-height: 38px; 
 	}
 }
-
 @media (max-width:412px){	/*MOBILE*/
 .headline { 
 	font-size: 28px; 
@@ -272,57 +270,16 @@ body {
 }
 
 
-.subheadline { 
-    font-family: "Playfair Display";
-	font-size: 24px; 
-	text-transform: none;
-	font-style: normal; 
-	font-variant: normal; 
-	line-height: 36px; 
-	letter-spacing: 0px;
-	color: #444;
-}
 
 
 
 
-
-.infoheadline { 
-    font-family: "Playfair Display";
-	font-size: 30px; 
-	text-transform: none;
-	font-style: italic; 
-	font-variant: normal; 
-	line-height: 32px; 
-	letter-spacing: 0px;
-	color: #444;
-	text-align: left;
-	margin: 40px 0px 10px 0px;
-}
-.intro { 
-	font-size: 30px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 100;
-	line-height: 32px; 
-	letter-spacing: 0.5px;
-	color: #111;
-}
 .body { 
 	font-size: 18px; 
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: 100;
 	line-height: 26px; 
-	letter-spacing: 0.5px;
-	color: #111;
-}
-.listing { 
-	font-size: 18px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 100;
-	line-height: 32px; 
 	letter-spacing: 0.5px;
 	color: #111;
 }
@@ -336,15 +293,7 @@ body {
 	letter-spacing: 1.0px;
 	color: #333;
 }
-.bodysmall { 
-	font-size: 16px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 100;
-	line-height: 22px; 
-	letter-spacing: 0.5px;
-	color: #111;
-}
+
 .bodybold { 
 	font-size: 18px; 
 	font-style: normal; 
@@ -353,6 +302,26 @@ body {
 	line-height: 26px; 
 	letter-spacing: 0.5px;
 	color: #333;
+}
+.bodysmall { 
+	text-decoration: none;
+	font-size: 16px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 100;
+	line-height: 22px; 
+	letter-spacing: 0.5px;
+	color: #111;
+}
+.bodyfooter { 
+	text-decoration: none;
+	font-size: 16px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 100;
+	line-height: 20px; 
+	letter-spacing: 0.5px;
+	color: #999;
 }
 .footerheadline { 
     font-family: "Playfair Display";
@@ -364,57 +333,80 @@ body {
 	letter-spacing: 0.75px;
 	color: #444;
 }
-.bodyfooter { 
-	text-decoration: none;
-	font-size: 15px; 
-	font-style: normal; 
-	font-variant: normal; 
-	font-weight: 100;
-	line-height: 20px; 
-	letter-spacing: 1px;
-	color: #999;
-}
-
-@media (max-width:830px){	/*TABLET*/
-.subheadline { 
-	font-size: 22px; 
-	line-height: 28px; 
-	}
-.intro { 
-	font-size: 26px; 
-	line-height: 28px; 
-	}
-}
 
 
-@media (max-width:412px){	/*MOBILE*/
-.intro { 
-	font-size: 20px; 
-	line-height: 22px; 
-	}
-.subheadline { 
-	font-size: 18px; 
-	line-height: 24px; 
-	}
-.infoheadline { 
-	font-size: 26px; 
-	line-height: 32px; 
-	margin: 32px 0px 0px 0px;
-	}
-.body { 
-	font-size: 16px; 
-	line-height: 22px; 
-	}
-.bodybold { 
-	font-size: 16px; 
-	line-height: 22px; 
-	}
-.hidden-xs {
-	display: none;
-	}
-}
+
+
+
+
 /* END FONT */
 
+
+
+
+
+
+
+
+
+
+
+
+
+.imagediv{
+	display: grid;
+	grid-gap: 40px;
+	grid-template-columns: 1fr 1fr;
+	margin: 0px 40px 40px 40px;
+}
+@media (max-width:830px){		/*TABLET*/
+	.imagediv{
+	grid-gap: 24px;
+	margin: 0px 24px 24px 24px;
+	}
+}
+@media (max-width:412px){  		/*MOBILE*/
+	.imagediv{
+	grid-gap: 16px;
+	margin: 0px 16px 16px 16px;
+	}
+}
+
+
+
+
+
+/*  PRICES  */
+
+.prices{
+	display: grid;
+	grid-gap: 40px;
+	grid-template-columns: 1fr 1fr;
+	margin: 0px 40px 40px 40px;
+}
+@media (max-width:1100px){		/*SMALLER SCREEN*/
+	.prices{
+	grid-template-columns: 1fr;
+	}
+}
+@media (max-width:830px){		/*TABLET*/
+	.prices{
+	grid-gap: 24px;
+	margin: 0px 24px 24px 24px;
+	}
+}
+@media (max-width:412px){  		/*MOBILE*/
+	.prices{
+	grid-gap: 16px;
+	margin: 0px 16px 16px 16px;
+	}
+}
+.prices div{
+	border: 0px #333 solid;
+	border-radius: 0px;
+	background-color: #eeece8;
+	padding: 10px 10px 20px 25px;
+}
 
 
 
@@ -501,68 +493,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-.imagediv{
-	display: grid;
-	grid-gap: 40px;
-	grid-template-columns: 1fr 1fr;
-	margin: 0px 40px 40px 40px;
-}
-@media (max-width:830px){		/*TABLET*/
-	.imagediv{
-	grid-gap: 24px;
-	margin: 0px 24px 24px 24px;
-	}
-}
-@media (max-width:412px){  		/*MOBILE*/
-	.imagediv{
-	grid-gap: 16px;
-	margin: 0px 16px 16px 16px;
-	}
-}
-
-
-
-
-
-/*  PRICES  */
-
-.prices{
-	display: grid;
-	grid-gap: 40px;
-	grid-template-columns: 1fr 1fr;
-	margin: 0px 40px 40px 40px;
-}
-@media (max-width:1100px){		/*SMALLER SCREEN*/
-	.prices{
-	grid-template-columns: 1fr;
-	}
-}
-@media (max-width:830px){		/*TABLET*/
-	.prices{
-	grid-gap: 24px;
-	margin: 0px 24px 24px 24px;
-	}
-}
-@media (max-width:412px){  		/*MOBILE*/
-	.prices{
-	grid-gap: 16px;
-	margin: 0px 16px 16px 16px;
-	}
-}
-.prices div{
-	border: 0px #333 solid;
-	border-radius: 0px;
-	background-color: #eeece8;
-	padding: 10px 10px 20px 25px;
-}
 
 /*  END PRICES  */
 
