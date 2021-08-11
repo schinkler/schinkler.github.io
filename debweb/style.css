@@ -507,6 +507,19 @@ body {
 	letter-spacing: 0.5px;
 	color: #000;
 }
+.g { 
+	border: 0px #333 solid;
+	vertical-align: top;
+	display: inline-block; 
+	width: 90%; 
+	font-size: 17px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400;
+	line-height: 24px; 
+	letter-spacing: 0.5px;
+	color: #222;
+}
 
 
 
