@@ -349,11 +349,11 @@ body {
 }
 .footerheadline { 
     font-family: "Playfair Display";
-	font-size: 20px; 
+	font-size: 23px; 
 	text-transform: uppercase;
 	font-style: normal; 
 	font-variant: normal; 
-	line-height: 22px; 
+	line-height: 26px; 
 	letter-spacing: 0.75px;
 	color: #444;
 }
