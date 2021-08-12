@@ -1,0 +1,198 @@
+<!doctype html>
+<html><head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Deborah Koepper Beauty</title>
+	
+	<link rel="shortcut icon" type="image/png" href="favicon.png">
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+
+	<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script>
+
+	$(document).ready(function(){
+	  $("a").on('click', function(event) {
+
+		if (this.hash !== "") {
+		  event.preventDefault();
+		  var hash = this.hash;
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top -120
+		  }, 800, function(){
+		  });
+		} 
+	  });
+	});
+
+	jQuery ( document ).ready ( function($) {
+	var hash= window.location.hash
+	if ( hash == '' || hash == '#' || hash == undefined ) return false;
+		  var target = $(hash);
+		  headerHeight = 120;
+		  target = target.length ? target : $('[name=' + hash.slice(1) +']');
+		  if (target.length) {
+			$('html,body').stop().animate({
+			  scrollTop: target.offset().top - 120 //offsets for fixed header
+			}, 'linear');
+		  }
+	} );
+
+
+
+
+	
+	jQuery( document ).ready(function() {
+		  jQuery('.xmenu a').click(function(){ 
+		  jQuery('.xmenu').css('height', '0');
+		  jQuery('.xmenu').removeClass('in');
+		});  
+	 });	
+		
+
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+</script>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</head>
+	
+<body>
+
+
+
+	
+	
+
+	
+	
+	
+	
+<div id="top"></div>
+	
+	
+	
+<div class="sticky">
+
+	<header class="header">
+    	<a href="index.html" class="logo"><img class="logo" src="images/logo_menubar.png" width="150" height="auto" alt="Deborah Koepper"></a>
+		
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+		
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            	<ul class="menu">
+					<li class="list"><a href="services.html">Services</a></li>
+					<li class="list"><a href="mailto:dksalon@aol.com">Book Now</a></li>
+					<li class="list"><a href="staff.html">Staff</a></li>
+					<li class="list"><a href="shop.html">Shop</a></li>
+					<li class="list"><a href="press.html">Press</a></li>
+					<li class="list"><a href="about.html">About</a></li>
+				</ul>
+	</header>
+	
+</div>
+		
+	
+	
+
+	
+
+	
+<div class="homequote">	
+
+<span class="headline">Staff</span>
+	
+</div>
+	
+	
+<div class="imagediv">
+	
+	<div>
+		<img class="logo" src="images/haircolor1.jpg" width="100%" height="auto" alt="Deborah Koepper">
+	</div>
+	
+	<div>
+		<img class="logo" src="images/haircut1.jpg" width="100%" height="auto" alt="Deborah Koepper">
+	</div>
+	
+</div>	
+	
+	
+<div class="prices">
+	<div>
+		<p class="bodyhead">Stylist</p>
+		<span class="a">Alain Pinon (AKS)</span><br>
+		<span class="a">Amy Gagno</span><br>
+		<span class="a">Carrie Capalbo</span><br>
+		<span class="a">Guillaume Boucher</span><br>
+		<span class="a">Rick Pipino (New York)</span>
+	</div>
+	
+	<div>
+		<p class="bodyhead">Colorist</p>
+		<span class="a">Amy Gagno</span><br>
+		<span class="a">Carrie Capalbo</span><br>
+		<span class="a">Guillaume Boucher</span>
+	</div>	
+
+		
+	<div>
+		<p class="bodyhead">Associates</p>
+		<span class="h">Salon AKS (New York City)</span> <span class="i"><a href="https://www.salonaks.com/" target="_blank" style="text-decoration: none; color: #111">LINK</a></span><br>
+		<span class="h">Lola Jones (Baltimore)</span>  <span class="i">Stylist</span><br>
+		<span class="h">Billy B (New York)</span> <span class="i">Make-Up Artist</span><br>
+		<span class="h">Sandy Koepper (Baltimore/Nashville)</span> <span class="i">Hair Make-Up TV, Movie and Hollywood Correspondent</span>
+	</div>
+	
+
+</div>
+	
+	
+	
+	
+
+<div class="footer">
+	
+	<span class="footerheadline">Get Social &#38; Connect</span><br>
+	<a href="https://www.facebook.com/deborah.koepper" target="_blank"><img src="images/sm_fb_dark.png" alt="FB"/></a>
+	<a href="https://dkbeauty.tumblr.com/" target="_blank"><img src="images/sm_tb_dark.png" alt="TB"/></a>
+	<a href="https://twitter.com/DKBeautyPB" target="_blank"><img src="images/sm_tw_dark.png" alt="TW"/></a>
+	<a href="https://www.instagram.com/dkbeauty1/" target="_blank"><img src="images/sm_ig_dark.png" alt="IG"/></a>
+	<a href="tel:+1-561-833-6561" target="_blank"><img src="images/sm_ph_dark.png" alt="PH"/></a>
+	<a href="mailto:dksalon@aol.com" target="_blank"><img src="images/sm_ml_dark.png" alt="ML"/></a>
+	
+	<p class="footersmall">215 Sunset Avenue<br>Palm Beach, FL 33480<br><a href="tel:+1-561.833.6561" style="text-decoration: none; color: #111">561.833.6561</a></p>
+	<p class="footerlight">© 2021 Deborah Koepper Beauty</p>
+
+</div>
+	
+	
+
+	
+	
+</body>
+</html>

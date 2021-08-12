@@ -299,11 +299,11 @@ body {
 
 
 .body { 
-	font-size: 18px; 
+	font-size: 17px; 
 	font-style: normal; 
 	font-variant: normal; 
 	font-weight: 100;
-	line-height: 26px; 
+	line-height: 24px; 
 	letter-spacing: 0.5px;
 	color: #111;
 }
@@ -397,6 +397,26 @@ body {
 
 /*  PRICES  */
 
+.fullpage{
+	grid-gap: 40px;
+	grid-template-columns: 1fr ;
+	margin: 0px 40px 40px 40px;
+}
+@media (max-width:830px){		/*TABLET*/
+	.fullpage{
+	grid-gap: 24px;
+	margin: 0px 24px 24px 24px;
+	}
+}
+@media (max-width:412px){  		/*MOBILE*/
+	.fullpage{
+	grid-gap: 16px;
+	margin: 0px 16px 16px 16px;
+	}
+}
+
+
+
 .prices{
 	display: grid;
 	grid-gap: 40px;
@@ -420,6 +440,7 @@ body {
 	margin: 0px 16px 16px 16px;
 	}
 }
+
 .prices div{
 	border: 0px #333 solid;
 	border-radius: 0px;
@@ -520,7 +541,32 @@ body {
 	letter-spacing: 0.5px;
 	color: #222;
 }
-
+.h { 
+	border: 0px #333 solid;
+	vertical-align: top;
+	display: inline-block; 
+	width: 55%; 
+	font-size: 17px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 100;
+	line-height: 30px; 
+	letter-spacing: 0.5px;
+	color: #000;
+}
+.i { 
+	border: 0px #333 solid;
+	display: inline-block; 
+	width: 40%; 
+	text-align: end; 
+	font-size: 17px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 100;
+	line-height: 30px; 
+	letter-spacing: 0.5px;
+	color: #000;
+}
 
 
 
