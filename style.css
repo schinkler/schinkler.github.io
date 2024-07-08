@@ -127,6 +127,7 @@ ul li a:hover {
 	color: #CCC;
 	border-radius: 3px;
 	padding: 5px 9px 5px 9px;
+	margin: 0px 5px 0px 0px;
 }
 
 .pdffooter:hover{
@@ -281,7 +282,14 @@ ul li a:hover {
 
 
 
-
+.center {
+  border: 0px solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
 
 
 
