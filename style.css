@@ -1,27 +1,5 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @charset "UTF-8";
 /* CSS Document */
-
-
-
 
 
 
@@ -681,70 +659,69 @@ ul li a:hover {
 	}
 
 /*MOBILE*/
-@media (max-width:400px){
+@media (max-width:412px){
 	
 	
-	.intro { 
-		font-size: 1.5em; 
-		line-height: 1.5em; 
+.intro { 
+	font-size: 1.5em; 
+	line-height: 1.5em; 
 }
 
-
-	.hire { 
+.hire { 
 	margin: 50px 20px 20px 20px;
 	font-size: 1.3em; 
 	line-height: 1.2em; 
 }
 
-	.headline { 
-		font-size: 1.15em; 
-		line-height: 1.0em; 
-		letter-spacing: 2px;
+.headline { 
+	font-size: 1.15em; 
+	line-height: 1.0em; 
+	letter-spacing: 2px;
 }
 	
-	.subhead { 
-		font-size: 1.1em; 
-		line-height: 1.0em; 
+.subhead { 
+	font-size: 1.1em; 
+	line-height: 1.0em; 
 }
 
-	.body { 
-		font-size: 0.8em; 
-		line-height: 1.0em; 
+.body { 
+	font-size: 0.8em; 
+	line-height: 1.0em; 
 }
 
-	.bodydark { 
-		font-size: 0.8em; 
-		line-height: 0.5em;
+.bodydark { 
+	font-size: 0.8em; 
+	line-height: 0.5em;
 }
 	
-	.city { 
-		font-size: 1.25em; 
-		line-height: 1.25em; 
+.city { 
+	font-size: 1.25em; 
+	line-height: 1.25em; 
 }
 	
-	.content {
-  		padding: 30px 30px;
+.content {
+  	padding: 30px 30px;
 }
 
-	.footer {
-		padding: 20px 20px;
+.footer {
+	padding: 20px 20px;
 }
 	
-	.logo {
-		width: 150px;
-		height: 67px;
+.logo {
+	width: 150px;
+	height: 67px;
 }
 	
-	.circular--landscape {
-  		width: 75px;
-  		height: 75px;
+.circular--landscape {
+  	width: 75px;
+  	height: 75px;
 }
 	
-	.portfoliocontainer {
-   		grid-template-columns: auto auto;
-		grid-template-rows: auto auto auto;
-		padding: 15px 0px 0px 0px;
-		grid-gap: 20px;
+.portfoliocontainer {
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto;
+	padding: 15px 0px 0px 0px;
+	grid-gap: 20px;
 }
 
 .container {
@@ -765,4 +742,7 @@ ul li a:hover {
 	display: none;
 }
 }
+
+
+
 
