@@ -431,6 +431,17 @@ form .submit:hover {
 	letter-spacing: 0.04em;
 	color: #222222;
 }
+.exhibitions { 
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 14px; 
+	text-transform: none;
+	font-style: normal; 
+	font-variant: normal; 	
+	font-weight: 100; 
+	line-height: 25px; 
+	letter-spacing: 0.04em;
+	color: #222222;
+}
 
 
 
@@ -546,7 +557,12 @@ form .submit:hover {
 
 .intro { 
 	font-size: 1.7em; 
-	line-height: 2.0em; 
+	line-height: 1.8em; 
+}
+
+.exhibitions { 
+	font-size: 0.85em; 
+	line-height: 20px; 
 }
 
 .header {
