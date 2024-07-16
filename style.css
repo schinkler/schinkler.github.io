@@ -278,9 +278,6 @@ ul li a:hover {
 .logo {
 	padding: 20px;
 	margin: 0px 0px 70px 0px;
-	background: radial-gradient(circle, #F48FB1 10%, #CE93D8 20%, #B2EBF2 40%, #A5D6A7 60%, #B39DDB 100%);
-	-webkit-background-clip: text;
-	color: transparent
 }
 
 
@@ -724,7 +721,7 @@ ul li a:hover {
 }
 	
 .content {
-  	padding: 30px 30px;
+  	padding: 20px 20px;
 }
 
 .footer {
