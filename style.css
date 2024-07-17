@@ -441,7 +441,7 @@ ul li a:hover {
 	border: 0px solid red;
 	color: #E5E5E5;
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-	font-size: 16px;
+	font-size: 24px;
 	position: absolute;
 	text-align: center;
 	text-transform: uppercase;
@@ -677,6 +677,10 @@ ul li a:hover {
 	line-height: 1.5em; 
 }
 
+.text a { 
+	font-size: 16px; 
+}
+
 .hire { 
 	margin: 50px 20px 20px 20px;
 	font-size: 1.3em; 
@@ -740,9 +744,11 @@ ul li a:hover {
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+	
 .forth {
     grid-column: 1 / -1;
 }
+	
 .fifth {
    	grid-column: 1/ -1;
 	background: #EEE;
