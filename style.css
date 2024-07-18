@@ -266,8 +266,8 @@ ul li a:hover {
 
 
 .logo {
-	padding: 20px;
-	margin: 0px 0px 70px 0px;
+	padding: 0px;
+	margin: 0px 0px 50px 0px;
 }
 
 
@@ -277,7 +277,7 @@ ul li a:hover {
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
-  	padding: 10px;
+  	padding: 50px;
 }
 
 
@@ -539,6 +539,9 @@ ul li a:hover {
 	background-image:url("");
 	background-repeat:no-repeat;
 }
+
+
+
 /*  END QUOTES  */
 
 
@@ -723,7 +726,7 @@ ul li a:hover {
 }
 	
 .logo {
-	width: 250px;
+	width: 275px;
 	height: 67px;
 	margin: 0px 0px 40px 0px;
 }
