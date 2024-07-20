@@ -686,7 +686,7 @@ ul li a:hover {
 }
 .fifth {
    	grid-column: 1/ -1;
-	padding: 15px;
+	padding: 15px 15px 20px 15px;
 }
 .sixth {
 	grid-column: 1 / -1;
@@ -794,7 +794,7 @@ ul li a:hover {
 .fifth {
    	grid-column: 1/ -1;
 	background: #EEE;
-	padding: 15px;
+	padding: 15px 15px 20px 15px;
 }
 
 .hidden-xs {
