@@ -714,18 +714,23 @@ ul li a:hover {
 }
 	
 .subhead { 
-	font-size: 1.1em; 
-	line-height: 1.0em; 
+	font-size: 1.4em; 
+	line-height: 1.3em; 
 }
 
 .body { 
-	font-size: 0.8em; 
-	line-height: 1.0em; 
+	font-size: 0.9em; 
+	line-height: 1.3em; 
+}
+
+.bullets { 
+	font-size: 0.9em; 
+	line-height: 1.3em; 
 }
 
 .bodydark { 
 	font-size: 0.8em; 
-	line-height: 0.5em;
+	line-height: 0.6em;
 }
 	
 .city { 
