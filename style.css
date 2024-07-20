@@ -193,6 +193,22 @@ ul li a:hover {
 	color: #111;
 }
 
+
+.bullets {
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	list-style-type: disc;
+	font-size: 1.09em; 
+	font-style: normal; 
+	font-variant: normal; 
+	padding: 4px 0px;
+	font-weight: 100;
+	line-height: 1.5em; 
+	letter-spacing: 0.05em;
+	margin-left: -20px;
+	color: #111;
+}
+
+
 .bodydark{ 
     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	font-size: 0.9em; 
@@ -360,11 +376,11 @@ ul li a:hover {
 }
 
 .forth {
-    grid-column: 8 / -1;
+    grid-column: 6 / -1;
 }
 
 .fifth {
-    grid-column: 1/ 8;
+    grid-column: 1/ 6;
 	border-radius: 10px;
 	background-color: #F3F3F3;
 	padding: 30px;
