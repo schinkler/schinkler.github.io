@@ -244,7 +244,13 @@ table.tableproduct tr:first-child > td {
 }	
 
 
-
+.rounded-image {
+    width : 150px;
+    height: 150px;
+    border-radius: 50%;
+   overflow: hidden;
+   object-position: center;
+}
 
 circle a {
 	width: 42px;
@@ -553,7 +559,7 @@ form .submit:hover {
 
 
 /*MOBILE*/
-@media (max-width:414px){
+@media (max-width:480px){
 
 .intro { 
 	font-size: 1.7em; 
@@ -577,6 +583,12 @@ form .submit:hover {
 	font-size: 1.2em; 
 }
 
+.rounded-image {
+    width : 100px;
+    height: 100px;
+}
+	
+	
 /*item1 HOME PAGE*/
 
 .item1 {
