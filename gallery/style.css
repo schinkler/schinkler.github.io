@@ -210,6 +210,26 @@ ul li a:hover {
 	z-index: 1;
 }
 
+.item6 {
+	border: 0px dashed #999;
+    grid-column: 1 / 5;
+	grid-row: 1;
+	align-self: center;
+	padding: 0em 0em 0em 0em;
+	z-index: 1;
+}
+
+.item7 {
+	border: 0px dashed #999;
+    grid-column: 4 / 13;
+	grid-row: 1;
+	align-content: center;
+	align-self: center;
+	padding: 0em 0em 0em 0em;
+	z-index: 0;
+}
+
+
 
 .fade{
       border: 0px solid black;
@@ -352,6 +372,22 @@ form .submit:hover {
 }
 
 
+.pdffooter {
+	background: #555;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	height: 12px;
+	line-height: 12px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 11px;
+	letter-spacing: 0.08em;
+	color: #CCC;
+	border-radius: 3px;
+	padding: 5px 9px 5px 9px;
+	margin: 0px 0px 0px 0px;
+	
+}
 
 
 
@@ -551,6 +587,19 @@ form .submit:hover {
 	grid-row: 2;
 }
 
+.item6 {
+	border: 0px dashed #999;
+    grid-column: 1 / -1;
+	grid-row: 1;
+	align-self: center;
+	padding: 0em 0em 0em 0em;
+	z-index: 0;
+}	
+.item7 {
+    grid-column: 1 / 12;
+	grid-row: 2;
+	align-self: center;
+	padding: 0em 0em 0em 0em;
 
 
 }
