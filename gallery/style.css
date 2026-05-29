@@ -221,7 +221,7 @@ ul li a:hover {
 
 .item7 {
 	border: 0px dashed #999;
-    grid-column: 4 / 13;
+    grid-column: 4 / -1;
 	grid-row: 1;
 	align-content: center;
 	align-self: center;
@@ -596,7 +596,7 @@ form .submit:hover {
 	z-index: 0;
 }	
 .item7 {
-    grid-column: 1 / 12;
+    grid-column: 1 / -1;
 	grid-row: 2;
 	align-self: center;
 	padding: 0em 0em 0em 0em;
