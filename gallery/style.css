@@ -614,6 +614,18 @@ form .submit:hover {
 	font-size: 1.7em; 
 	line-height: 1.8em; 
 }
+	
+	
+.bodyproductbold { 
+	font-size: 0.9em; 
+	line-height: 20px; 
+}
+.bodyproduct { 
+	font-size: 0.9em; 
+	line-height: 22px; 
+}
+	
+	
 
 .exhibitions { 
 	font-size: 12px; 
@@ -694,7 +706,7 @@ form .submit:hover {
 
 
 
-}
+
 
 
 
